@@ -5,3 +5,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+
+.navbar-horizontal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100% auto;
+  background-color: #686868;
+  padding: 10px 20px;
+}
+
+.navbar-horizontal a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.navbar-horizontal a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+.navbar-vertical {
+  width: 200px;
+  background-color: #565555;
+  padding: 20px;
+  height: 100vh;
+}
+
+.navbar-vertical a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0%;
+}
+
+.navbar-vertical a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
