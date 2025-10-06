@@ -16,98 +16,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-screen flex flex-col m-0 p-0">
-    <section class="navbar-horizontal flex justify-center space-x-8 p-4 bg-gray-800 text-white">
-        <a href="/index.html" class="nav-link hover:text-blue-400 transition">Home</a>
-        <a href="/about.html" class="nav-link hover:text-blue-400 transition">About</a>
-        <a href="projects.html" class="nav-link hover:text-blue-400 transition">Projects</a>
-        <a href="contact.html" class="nav-link hover:text-blue-400 transition">Contact</a>
-    </section>
+<body class="min-h-screen bg-gray-100 flex flex-col m-0 p-0">
+    <div class="navbar-horizontal flex space-x-4 p-2 bg-gray-800 text-white">
+        <a href="index.html" class="nav-link m-0 p-2" class="active">Home</a>
+        <a href="about.html" class="nav-link m-0 p-2">About</a>
+        <a href="projects.html" class="nav-link m-0 p-2">Projects</a>
+        <a href="contact.html" class="nav-link m-0 p-2">Contact</a>
+    </div>
+
+    <div class="flex flex-1 m-0 p-0">
+        <div class="navbar-vertical flex flex-col space-y-2 p-2 bg-gray-700 text-white">
+            <a href="index.html" class="nav-link-vert m-0 p-2"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="/order.html" class="nav-link-vert m-0 p-2"><i class="fa-solid fa-user"></i> Pre-Order</a>
+            <a href="projects.html" class="nav-link-vert m-0 p-2"><i class="fa-solid fa-folder-open"></i> Projects</a>
+            <a href="contact.html" class="nav-link-vert m-0 p-2"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </div>
+    </div>
 
 
-    <section class="flex flex-1 m-0 p-0">
-        <section class="navbar-vertical flex flex-col space-y-2 p-4 bg-gray-700 text-white w-48">
-            <a href="/index.html" class="nav-link-vert p-3 hover:bg-gray-600 rounded transition">
-                <i class="fa-solid fa-house"></i> Home
-            </a>
-            <a href="/order.html" class="nav-link-vert p-3 hover:bg-gray-600 rounded transition">
-                <i class="fa-solid fa-user"></i> Pre-Order
-            </a>
-            <a href="projects.html" class="nav-link-vert p-3 hover:bg-gray-600 rounded transition">
-                <i class="fa-solid fa-folder-open"></i> Projects
-            </a>
-            <a href="contact.html" class="nav-link-vert p-3 hover:bg-gray-600 rounded transition">
-                <i class="fa-solid fa-envelope"></i> Contact
-            </a>
-        </section>
 
-
-        <section class="about-us py-16 flex-1 overflow-y-auto">
-            <div class="max-w-4xl mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h1 class="text-4xl font-bold text-gray-800 mb-6">Welcome to My Website!</h1>
-                    <p class="text-gray-600 mb-4 leading-relaxed text-lg">
-                        Hi, I'm <span class="font-semibold text-blue-600">Asim Mian</span>, a passionate Web Developer
-                        and student at UWS. I love creating interactive and dynamic web experiences using HTML, CSS,
-                        JavaScript, and jQuery.
-                    </p>
-                    <p class="text-gray-600 mb-4 leading-relaxed text-lg">
-                        My interests include <span class="font-semibold">games, programming, and exploring new web
-                            technologies</span>. I enjoy experimenting with creative UI designs and building projects
-                        that combine functionality with aesthetic appeal.
-                    </p>
-                    <p class="text-gray-600 mb-8 leading-relaxed text-lg">
-                        This website showcases my skills, projects, and a few fun experiments with front-end
-                        development. Feel free to explore and get to know my work!
-                    </p>
-                    <a href="/contact.html"
-                        class="inline-block px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition shadow-md">
-                        Contact Me
-                    </a>
-                </div>
-
-
-                <section class="flex justify-center mb-12">
-                    <div
-                        class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
-                        <div class="flex flex-col items-center py-10 px-6">
-                            <img class="w-28 h-28 mb-4 rounded-full shadow-lg border-4 border-gray-100 transition-transform duration-500 hover:scale-110"
-                                src="img/profile_picture.jpg" alt="Asim Mian profile picture" />
-                            <h5 class="mb-2 text-2xl font-bold text-gray-900">Asim Mian</h5>
-                            <p class="text-sm text-gray-500 mb-1">Student</p>
-                            <p class="text-sm text-gray-500 mb-3">Web Developer</p>
-                            <p class="text-sm text-gray-600 font-medium mb-3">Interests: Games, Programming</p>
-                            <p class="text-sm text-gray-500 text-center max-w-xs leading-relaxed">
-                                I'm passionate about web development and learning new things such as Chinese.
-                            </p>
-                            <div class="flex mt-6">
-                                <a href="/about.html"
-                                    class="inline-flex items-center px-6 py-2.5 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 transition transform hover:-translate-y-1 hover:shadow-lg duration-300">
-                                    About Me
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </section>
-    </section>
-
-
-    <footer class="bg-white w-full border-t border-gray-200">
+        <footer class="bg-white w-full border-t border-gray-200">
         <div class="mx-auto max-w-5xl px-4 py-12">
             <div class="flex flex-col items-center mb-8">
                 <p class="max-w-md text-center leading-relaxed text-gray-600">
                     This is my project for Dr Saajad in my BSc Web and Mobile Year 3.
                 </p>
             </div>
-
+            
             <ul class="mb-8 flex flex-wrap justify-center gap-8">
                 <li><a class="text-gray-700 font-medium hover:text-blue-600 transition" href="/index.html">Home</a></li>
-                <li><a class="text-gray-700 font-medium hover:text-blue-600 transition" href="/about.html">About</a>
-                </li>
-                <li><a class="text-gray-700 font-medium hover:text-blue-600 transition" href="/order.html">Order</a>
-                </li>
+                <li><a class="text-gray-700 font-medium hover:text-blue-600 transition" href="/about.html">About</a></li>
+                <li><a class="text-gray-700 font-medium hover:text-blue-600 transition" href="/order.html">Order</a></li>
             </ul>
 
             <ul class="flex justify-center gap-6">
@@ -159,12 +98,6 @@
                 </li>
             </ul>
         </div>
-        <div class="paragraph-copyright">
-            &copy; Asim Mian 6/10/25
-        </div>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
-
 </html>
