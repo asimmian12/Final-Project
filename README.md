@@ -6,7 +6,12 @@
 
 
 <!-- Refernces: -->
-<!-- https://uiverse.io/Smit-Prajapati/tricky-lionfish-78 -->
-<!-- https://flowbite.com/docs/components/card/#user-profile-card  
-    See at: "User profile card"-->
 
+<!-- https://uiverse.io/Smit-Prajapati/tricky-lionfish-78 -->
+
+<!-- https://flowbite.com/docs/components/card/#user-profile-card  
+    See at: "User profile card"
+-->
+<!-- https://flowbite.com/docs/components/card/#card-with-image 
+  See at: "Card with Image"
+-->

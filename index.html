@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Asim Mian">
-    <meta content="Final Project" property="og:title">
-    <meta name="description" content="This is my project for Dr Saajad in my BSc Web and Mobile Year 3." property="og:description">
-    <meta property="og:type" content="Website">
     <meta name="description" content="This is my professional website for Dr Saajad Class">
     <meta name="keywords" content="Work, Assesment, Practical, Web Development, Programming, HTML, CSS, JS, Tailwind">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,30 +20,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="min-h-screen flex flex-col m-0 p-0">
-    <section class="navbar-horizontal flex justify-center space-x-8 p-4 bg-gray-800 text-white">
-        <a href="/index.html" class="nav-link hover:text-blue-400 transition">Home</a>
-        <a href="/about.html" class="nav-link hover:text-blue-400 transition">About</a>
-        <a href="/projects.html" class="nav-link hover:text-blue-400 transition">Projects</a>
-        <a href="contact.html" class="nav-link hover:text-blue-400 transition">Contact</a>
-    </section>
+<body class="min-h-screen bg-white-100 flex flex-col m-0 p-0">
+    <div class="navbar-horizontal flex space-x-4 p-2 bg-gray-800 text-white">
+        <a href="/index.html" class="nav-link m-0 p-2" class="active">Home</a>
+        <a href="/about.html" class="nav-link m-0 p-2" >About</a>
+        <a href="/projects.html" class="nav-link m-0 p-2">Projects</a>
+        <a href="contact.html" class="nav-link m-0 p-2">Contact</a>
+    </div>
 
-
-    <section class="flex flex-1 m-0 p-0">
-        <section class="navbar-vertical flex flex-col space-y-2 p-4 bg-gray-700 text-white w-48">
-            <a href="/index.html" class="nav-link-vert p-3 hover:bg-gray-600 rounded transition">
-                <i class="fa-solid fa-house"></i> Home
-            </a>
-            <a href="/order.html" class="nav-link-vert p-3 hover:bg-gray-600 rounded transition">
-                <i class="fa-solid fa-user"></i> Pre-Order
-            </a>
-            <a href="/projects.html" class="nav-link-vert p-3 hover:bg-gray-600 rounded transition">
-                <i class="fa-solid fa-folder-open"></i> Projects
-            </a>
-            <a href="contact.html" class="nav-link-vert p-3 hover:bg-gray-600 rounded transition">
-                <i class="fa-solid fa-envelope"></i> Contact
-            </a>
-        </section>
+    <div class="flex flex-1 min-h-screen">
+        <div class="navbar-vertical flex flex-col space-y-2 p-4 bg-white-800 text-white w-60 min-h-screen">
+            <a href="/index.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded"><i
+                    class="fa-solid fa-house"></i> Home</a>
+            <a href="/order.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded"><i class="fa-solid fa-user"></i> Pre-Order</a>
+            <a href="/projects.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded"><i
+                    class="fa-solid fa-folder-open"></i> Projects</a>
+            <a href="contact.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded"><i
+                    class="fa-solid fa-envelope"></i> Contact</a>
+        </div>
 
 
         <section class="about-us py-16 flex-1 overflow-y-auto">
@@ -74,11 +65,10 @@
                 </div>
 
 
-                <section class="flex justify-center mb-12">
+                <section class="flex items-center justify-center text-center mb-12 -ml-23" style="margin-right: 120px;">
                     <div
-                        class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-xl transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                         <div class="flex flex-col items-center py-10 px-6">
-                            <!-- <img class="w-28 h-28 mb-4 rounded-full shadow-lg border-4 border-gray-100 transition-transform duration-500 hover:scale-110" src="img/profile_picture.jpg" alt="Asim Mian profile picture" /> -->
                             <figure class="profile_picture">
                                 <img class="w-28 h-28 mb-4 rounded-full shadow-lg border-4 border-gray-100 transition-transform duration-500 hover:scale-110"
                                     src="img/profile_picture.jpg" alt="Asim Mian profile picture" />
@@ -91,7 +81,7 @@
                             <p class="text-sm text-gray-500 text-center max-w-xs leading-relaxed">
                                 I'm passionate about web development and learning new things such as Chinese.
                             </p>
-                            <div class="flex mt-6">
+                            <div class="flex items-center justify-center text-center mb-12 mt-6 -ml-25">
                                 <a href="/about.html"
                                     class="inline-flex items-center px-6 py-2.5 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 transition transform hover:-translate-y-1 hover:shadow-lg duration-300">
                                     About Me
@@ -102,9 +92,8 @@
                 </section>
             </div>
         </section>
-    </section>
-
-
+    </div>
+    
     <footer class="bg-white w-full border-t border-gray-200">
         <div class="mx-auto max-w-5xl px-4 py-12">
             <div class="flex flex-col items-center mb-8">

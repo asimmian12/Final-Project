@@ -93,3 +93,12 @@ p {
   background-color: #575757;
   border-radius: 4px;
 }
+
+.orders{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5%;
+  margin: 5%;
+}

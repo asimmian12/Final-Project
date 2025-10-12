@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Asim Mian">
@@ -9,43 +10,108 @@
     <title>Final Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="favicon/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="min-h-screen bg-white-100 flex flex-col m-0 p-0">
     <div class="navbar-horizontal flex space-x-4 p-2 bg-gray-800 text-white">
-        <a href="/index.html" class="nav-link m-0 p-2" >Home</a>
+        <a href="/index.html" class="nav-link m-0 p-2">Home</a>
         <a href="/about.html" class="nav-link m-0 p-2">About</a>
         <a href="/projects.html" class="nav-link m-0 p-2">Projects</a>
         <a href="contact.html" class="nav-link m-0 p-2">Contact</a>
     </div>
 
-   <body class="flex flex-1 min-h-screen">
-  <div class="navbar-vertical flex flex-col space-y-2 p-4 bg-white-800 text-white w-60 min-h-screen">
-    <a href="/index.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded"><i class="fa-solid fa-house"></i> Home</a>
-    <a href="/order.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded" class="active"><i class="fa-solid fa-user"></i> Pre-Order</a>
-    <a href="/projects.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded"><i class="fa-solid fa-folder-open"></i> Projects</a>
-    <a href="contact.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded"><i class="fa-solid fa-envelope"></i> Contact</a>
-  </div>
+    <div class="flex flex-1 min-h-screen">
+        <div class="navbar-vertical flex flex-col space-y-2 p-4 bg-white-800 text-white w-60 min-h-screen">
+            <a href="/index.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded"><i
+                    class="fa-solid fa-house"></i> Home</a>
+            <a href="/order.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded"
+                class="active"><i class="fa-solid fa-user"></i> Pre-Order</a>
+            <a href="/projects.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded"><i
+                    class="fa-solid fa-folder-open"></i> Projects</a>
+            <a href="contact.html" class="nav-link-vert flex items-center gap-2 p-2 hover:bg-gray-700 rounded"><i
+                    class="fa-solid fa-envelope"></i> Contact</a>
+        </div>
 
+        <section class="orders">
+            <!-- Product 1 -->
+            <section
+                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Jo Smith</h5>
+                <img src="https://placehold.co/600x400" alt="This is a placeholder image" />
+                <button
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Add to Cart
+                </button>
+                <button
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Clear
+                </button>
+                <button
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Remove
+                </button>
+            </section>
+            <!-- Product 2 -->
+            <section
+                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">GU2</h5>
+                <img src="https://placehold.co/600x400" alt="This is a placeholder image" />
+                <button
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Add to Cart
+                </button>
+                <button
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Clear
+                </button>
+                <button
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Remove
+                </button>
+            </section>
+            <!-- Product 3 -->
+            <section
+                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Digan's</h5>
+                <img src="https://placehold.co/600x400" alt="This is a placeholder image" />
+                <button
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Add to Cart
+                </button>
+                <button
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Clear
+                </button>
+                <button
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Remove
+                </button>
+            </section>
+        </section>
+    </div>
 
-
-        <footer class="bg-white w-full border-t border-gray-200">
+    <footer class="bg-white w-full border-t border-gray-200">
         <div class="mx-auto max-w-5xl px-4 py-12">
             <div class="flex flex-col items-center mb-8">
                 <p class="max-w-md text-center leading-relaxed text-gray-600">
                     This is my project for Dr Saajad in my BSc Web and Mobile Year 3.
                 </p>
             </div>
-            
+
             <ul class="mb-8 flex flex-wrap justify-center gap-8">
                 <li><a class="text-gray-700 font-medium hover:text-blue-600 transition" href="/index.html">Home</a></li>
-                <li><a class="text-gray-700 font-medium hover:text-blue-600 transition" href="/about.html">About</a></li>
-                <li><a class="text-gray-700 font-medium hover:text-blue-600 transition" href="/order.html">Order</a></li>
+                <li><a class="text-gray-700 font-medium hover:text-blue-600 transition" href="/about.html">About</a>
+                </li>
+                <li><a class="text-gray-700 font-medium hover:text-blue-600 transition" href="/order.html">Order</a>
+                </li>
             </ul>
 
             <ul class="flex justify-center gap-6">
@@ -97,6 +163,10 @@
                 </li>
             </ul>
         </div>
+        <div class="paragraph-copyright">
+            &copy; Asim Mian 6/10/25
+        </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
