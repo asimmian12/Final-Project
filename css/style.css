@@ -65,7 +65,7 @@ p,
 .navbar-horizontal a:hover,
 .navbar-horizontal .nav-link:hover,
 .navbar-horizontal .nav-link.active,
-.navbar-horizontal a.active {
+.navbar-horizontal a.active{
   background-color: #374151;
 }
 
