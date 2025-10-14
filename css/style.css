@@ -70,7 +70,6 @@ p,
 }
 
 /* ---------- Layout ---------- */
-
 .layout {
   display: flex;
   flex: 1;
@@ -174,11 +173,11 @@ p,
 }
 
 .card-front {
-  background-color: #3498db;
+  background-color: #0536e7;
 }
 
 .card-back {
-  background-color: #2ecc71;
+  background-color: #053af9;
   transform: rotateY(180deg);
 }
 
