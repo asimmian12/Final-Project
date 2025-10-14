@@ -8,7 +8,7 @@
 
 body {
   min-height: 100vh;
-  background: #f9fafb;
+  background-color: #E5E7EB;
   display: flex;
   flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,11 +32,6 @@ p, .paragraph-text, .paragraph-copyright {
   align-items: center;
   justify-content: center;
   padding: 1.4px;
-}
-
-/* ---------- Paragraph-text ---------- */
-.paragraph-text {
-  padding: 5px;
 }
 
 /* ---------- Horizontal Navigation ---------- */
@@ -249,13 +244,6 @@ p, .paragraph-text, .paragraph-copyright {
   margin-bottom: 1.5rem;
 }
 
-.intro {
-  color: #4b5563;
-  margin-bottom: 1rem;
-  line-height: 1.7;
-  font-size: 1.125rem;
-}
-
 .highlight {
   font-weight: 600;
   color: #2563eb;
@@ -431,7 +419,7 @@ p, .paragraph-text, .paragraph-copyright {
 
 
 /* ---------- Footer ---------- */
-.main-footer {
+.footer__paragraph__text {
   background: #ffffff;
   width: 100%;
   border-top: 1px solid #E5E7EB;
@@ -440,21 +428,21 @@ p, .paragraph-text, .paragraph-copyright {
   font-family: inherit;
 }
 
-.main-footer__container {
+.footer__paragraph__text__container {
   max-width: 64rem;
   margin: 0 auto;
   padding: 3rem 1rem;
   box-sizing: border-box;
 }
 
-.main-footer__intro {
+.footer__paragraph__text__intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
 }
 
-.main-footer__text {
+.footer__paragraph__text {
   max-width: 28rem;
   text-align: center;
   line-height: 1.625;
@@ -463,7 +451,7 @@ p, .paragraph-text, .paragraph-copyright {
 }
 
 /* ---------- Footer Navigation ---------- */
-.main-footer__nav {
+.footer__paragraph__text__navigation {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -473,20 +461,20 @@ p, .paragraph-text, .paragraph-copyright {
   margin: 0 0 2rem 0;
 }
 
-.main-footer__link {
+.footer__paragraph__text__links {
   color: #374151;
   font-weight: 500;
   text-decoration: none;
   transition: color 180ms ease;
 }
 
-.main-footer__link:hover,
-.main-footer__link:focus {
+.footer__paragraph__text__links:hover,
+.footer__paragraph__text__links:focus {
   color: #2563EB;
 }
 
 /* ---------- Footer Socials ---------- */
-.main-footer__social {
+.footer__paragraph__text__social {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -495,7 +483,7 @@ p, .paragraph-text, .paragraph-copyright {
   margin: 0;
 }
 
-.main-footer__social-link {
+.footer__paragraph__text__social__links {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -504,33 +492,33 @@ p, .paragraph-text, .paragraph-copyright {
   transition: color 180ms ease;
 }
 
-.main-footer__social-link[aria-label="Facebook"]:hover, .main-footer__social-link[aria-label="Facebook"]:focus {
+.footer__paragraph__text__social__links[aria-label="Facebook"]:hover, .footer__paragraph__text__social__links[aria-label="Facebook"]:focus {
   color: #2563EB;
 }
 
-.main-footer__social-link[aria-label="Instagram"]:hover, .main-footer__social-link[aria-label="Instagram"]:focus {
+.footer__paragraph__text__social__links[aria-label="Instagram"]:hover, .footer__paragraph__text__social__links[aria-label="Instagram"]:focus {
   color: #d81b60;
 }
 
-.main-footer__social-link[aria-label="X"]:hover, .main-footer__social-link[aria-label="X"]:focus, .main-footer__social-link[aria-label="GitHub"]:hover, .main-footer__social-link[aria-label="GitHub"]:focus {
+.footer__paragraph__text__social__links[aria-label="X"]:hover, .footer__paragraph__text__social__links[aria-label="X"]:focus, .footer__paragraph__text__social__links[aria-label="GitHub"]:hover, .footer__paragraph__text__social__links[aria-label="GitHub"]:focus {
   color: #111827;
 }
 
-/* ---------- Footer Paragraph Screen Reader ---------- */
-.sr-only {
+/* ---------- Footer Paragraph-Text Screen Reader ---------- */
+.paragraph-text {
   position: absolute !important;
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
   border: 0;
+  padding: 5px;
 }
 
 /* ---------- Footer Copyright ---------- */
-.main-footer__copyright {
+.footer__paragraph__text__copyright {
   text-align: center;
   padding: 0.75rem 1rem;
   color: #6B7280;

@@ -20,39 +20,36 @@
 <body>
     <!-- Horizontal Navbar -->
     <div class="navbar-horizontal">
-        <a href="/index.html" class="nav-link">Home</a>
+        <a href="/index.html" class="nav-link active">Home</a>
         <a href="/about.html" class="nav-link">About</a>
-        <a href="/projects.html" class="nav-link active">Projects</a>
+        <a href="/projects.html" class="nav-link">Projects</a>
         <a href="/contact.html" class="nav-link">Contact</a>
     </div>
 
 
     <div class="layout">
+        <!-- Vertical Navbar -->
         <div class="navbar-vertical">
             <a href="/index.html" class="nav-link-vert"><i class="fa-solid fa-house"></i> Home</a>
             <a href="/order.html" class="nav-link-vert"><i class="fa-solid fa-user"></i> Pre-Order</a>
             <a href="/projects.html" class="nav-link-vert"><i class="fa-solid fa-folder-open"></i> Projects</a>
             <a href="/contact.html" class="nav-link-vert"><i class="fa-solid fa-envelope"></i> Contact</a>
         </div>
-        <!-- Orders / Products section -->
-        <section class="orders" aria-label="Product list" style="flex-wrap:wrap; gap:1.25rem;">
-            <!-- Product 1 -->
-            <section class="product-card"
-                style="max-width:320px; padding:1rem; background:#fff; border:1px solid #e5e7eb; border-radius:8px;">
-                <h5 class="product-title">Jo Smith</h5>
-                <img src="https://placehold.co/600x400" alt="Jo Smith product image"
-                    style="width:100%; height:auto; display:block; margin:0.5rem 0; border-radius:6px;">
-                <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
-                    <button class="btn-primary" type="button">Add to Cart</button>
-                    <button class="btn-primary" type="button"
-                        style="background:#6b7280; box-shadow:none;">Clear</button>
-                    <button class="btn-primary" type="button"
-                        style="background:#ef4444; box-shadow:none;">Remove</button>
-                </div>
+
+        <section class="form" id="form">
+            <section class="unique_labels" id="unique_labels">
+                <label>Name: </label>
+                <input type="text" required>
+                <label>Income: </label>
+                <input type="date" required>
             </section>
+            <section class="buttons" id="buttons">
+                <button type="add_person" name="add_person" value="add_person">Add Person</button>
+                <button type="income" name="income" value="income">Sort Income</button>
+                <button type="birthday" name="birthday" value="birthday">Sort By Birthday</button>
+            </section>
+            <p class="paragraph-text">Total:</p>
         </section>
-    </div>
-    </section>
     </div>
 
     <footer class="footer__paragraph__text">
@@ -108,6 +105,7 @@
             &copy; Asim Mian 6/10/25
         </section>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
