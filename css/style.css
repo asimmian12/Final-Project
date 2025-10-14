@@ -16,7 +16,9 @@ body {
   line-height: 1.6;
 }
 
-p, .paragraph-text, .paragraph-copyright {
+p,
+.paragraph-text,
+.paragraph-copyright {
   font-family: 'Roboto', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   color: #333;
@@ -46,7 +48,8 @@ p, .paragraph-text, .paragraph-copyright {
 }
 
 
-.navbar-horizontal a, .navbar-horizontal .nav-link {
+.navbar-horizontal a,
+.navbar-horizontal .nav-link {
   color: #ffffff;
   text-decoration: none;
   padding: 0.5rem 0.75rem;
@@ -54,38 +57,11 @@ p, .paragraph-text, .paragraph-copyright {
   transition: background-color 0.2s;
 }
 
-.navbar-horizontal, .navbar-horizontal .nav-link:hover, .navbar-horizontal .nav-link.active, .navbar-horizontal, .navbar-vertical.active, a.active, a:hover{
+.navbar-horizontal a:hover,
+.navbar-horizontal .nav-link:hover,
+.navbar-horizontal .nav-link.active,
+.navbar-horizontal a.active{
   background-color: #374151;
-}
-/* ---------- Hamburger Menu ---------- */
-.hamburger_menu {
-  position: fixed;           
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;             
-}
-
-.hamburger-button {
-  background-color: #ffffff;
-  border: 2px solid #333;   
-  border-radius: 8px;        
-  cursor: pointer;
-  padding: 0.6rem 0.75rem;
-  font-size: 1.8rem;        
-  color: #111;               
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}
-
-.hamburger-button:hover, .hamburger-button:focus {
-  background-color: #111;   
-  color: #fff;              
-  transform: scale(1.05);   
-  outline: none;
-}
-
-.hamburger-button i {
-  pointer-events: none;      
 }
 
 /* ---------- Layout ---------- */
@@ -106,7 +82,8 @@ p, .paragraph-text, .paragraph-copyright {
   min-height: 100vh;
 }
 
-.navbar-vertical a, .nav-link-vert {
+.navbar-vertical a,
+.nav-link-vert {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -117,7 +94,8 @@ p, .paragraph-text, .paragraph-copyright {
   transition: background-color 0.2s ease;
 }
 
-.navbar-vertical a:hover, .nav-link-vert:hover {
+.navbar-vertical a:hover,
+.nav-link-vert:hover {
   background-color: #374151;
 }
 
@@ -167,11 +145,13 @@ p, .paragraph-text, .paragraph-copyright {
   transition: transform 0.6s;
 }
 
-.card:hover .card-inner, .card:focus-within .card-inner {
+.card:hover .card-inner,
+.card:focus-within .card-inner {
   transform: rotateY(180deg);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -204,11 +184,13 @@ p, .paragraph-text, .paragraph-copyright {
   border: 3px solid white;
 }
 
-.card-front h2, .card-back h2 {
+.card-front h2,
+.card-back h2 {
   margin-bottom: 10px;
 }
 
-.card-front p, .card-back p {
+.card-front p,
+.card-back p {
   font-size: 16px;
   text-align: center;
 }
@@ -492,15 +474,20 @@ p, .paragraph-text, .paragraph-copyright {
   transition: color 180ms ease;
 }
 
-.footer__paragraph__text__social__links[aria-label="Facebook"]:hover, .footer__paragraph__text__social__links[aria-label="Facebook"]:focus {
+.main-footer__social-link[aria-label="Facebook"]:hover,
+.main-footer__social-link[aria-label="Facebook"]:focus {
   color: #2563EB;
 }
 
-.footer__paragraph__text__social__links[aria-label="Instagram"]:hover, .footer__paragraph__text__social__links[aria-label="Instagram"]:focus {
+.main-footer__social-link[aria-label="Instagram"]:hover,
+.main-footer__social-link[aria-label="Instagram"]:focus {
   color: #d81b60;
 }
 
-.footer__paragraph__text__social__links[aria-label="X"]:hover, .footer__paragraph__text__social__links[aria-label="X"]:focus, .footer__paragraph__text__social__links[aria-label="GitHub"]:hover, .footer__paragraph__text__social__links[aria-label="GitHub"]:focus {
+.main-footer__social-link[aria-label="X"]:hover,
+.main-footer__social-link[aria-label="X"]:focus,
+.main-footer__social-link[aria-label="GitHub"]:hover,
+.main-footer__social-link[aria-label="GitHub"]:focus {
   color: #111827;
 }
 
