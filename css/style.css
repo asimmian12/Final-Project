@@ -466,22 +466,10 @@ p,
   transition: color 180ms ease;
 }
 
-.main-footer__social-link[aria-label="Facebook"]:hover,
-.main-footer__social-link[aria-label="Facebook"]:focus {
+.footer__paragraph__text__social__links:hover{
   color: #2563EB;
 }
 
-.main-footer__social-link[aria-label="Instagram"]:hover,
-.main-footer__social-link[aria-label="Instagram"]:focus {
-  color: #d81b60;
-}
-
-.main-footer__social-link[aria-label="X"]:hover,
-.main-footer__social-link[aria-label="X"]:focus,
-.main-footer__social-link[aria-label="GitHub"]:hover,
-.main-footer__social-link[aria-label="GitHub"]:focus {
-  color: #111827;
-}
 
 /* ---------- Footer Copyright ---------- */
 .footer__paragraph__text__copyright {
@@ -490,7 +478,6 @@ p,
   color: #6B7280;
   font-size: 0.875rem;
 }
-
 
 /* ---------- Hamburger Menu ---------- */
 .hamburger_menu {
