@@ -271,7 +271,6 @@ p,
   justify-content: center;
 }
 
-
 .profile-img {
   width: 16rem;
   height: 16rem;
@@ -281,10 +280,14 @@ p,
   border: 4px solid #2563eb;
 }
 
+.profile-img:hover{
+  transform: scale(150%);
+  transition: all 0.3s;
+}
+
 /* ---------- Skills Section ---------- */
 .skills-section {
   background-color: #E5E7EB;
-  ;
   padding: 4rem 1.5rem;
 }
 
