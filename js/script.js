@@ -10,5 +10,5 @@ function hamburgerMenu(){
     } else{
         hamburger_menu.classList.remove("active");
     }
-    return hamburgerMenu
+    return hamburgerMenu;
 }
