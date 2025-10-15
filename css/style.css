@@ -130,6 +130,12 @@ p,
   margin: 5%;
 }
 
+.uws-question{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 /*---------- Cards ---------- */
 .card {
   display: flex;
