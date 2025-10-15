@@ -1,3 +1,7 @@
+// Asim Mian
+// BSc Web and Mobile Development (Year 3)
+// 15/10/2025 
+
 // ------------------------TODO-------------------//
 function hamburgerMenu(){
     const hamburger_menu = document.querySelector(".navbar-vertical");
