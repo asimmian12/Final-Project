@@ -17,9 +17,8 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <!-- Horizontal Navbar -->
+    <!--------Horizontal Navbar-------->
     <div class="navbar-horizontal">
         <a href="/index.html" class="nav-link active">Home</a>
         <a href="/about.html" class="nav-link">About</a>
@@ -27,14 +26,28 @@
         <a href="/contact.html" class="nav-link">Contact</a>
     </div>
 
-
+    <!--------Layout---------->
     <div class="layout">
-        <!-- Vertical Navbar -->
+        <!------Vertical Navbar------->
         <div class="navbar-vertical">
             <a href="/index.html" class="nav-link-vert"><i class="fa-solid fa-house"></i> Home</a>
             <a href="/order.html" class="nav-link-vert"><i class="fa-solid fa-user"></i> Pre-Order</a>
             <a href="/projects.html" class="nav-link-vert"><i class="fa-solid fa-folder-open"></i> Projects</a>
             <a href="/contact.html" class="nav-link-vert"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </div>
+        <!----------Hamburger Menu--------->
+        <div class="hamburger_menu">
+            <button class="hamburger-button" onclick="hamburgerMenu()">
+                <i class="fa-solid fa-bars"></i>
+                <div class="hamburger_navbar">
+                    <a href="/index.html" class="hamburger_navbar-vert"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="/order.html" class="hamburger_navbar-vert"><i class="fa-solid fa-user"></i> Pre-Order</a>
+                    <a href="/projects.html" class="hamburger_navbar-vert"><i class="fa-solid fa-folder-open"></i>
+                        Projects</a>
+                    <a href="/contact.html" class="hamburger_navbar-vert"><i class="fa-solid fa-envelope"></i>
+                        Contact</a>
+                </div>
+            </button>
         </div>
 
         <section class="form" id="form">
@@ -53,6 +66,7 @@
         </section>
     </div>
 
+    <!----------Footer--------->
     <footer class="footer__paragraph__text">
         <div class="footer__paragraph__text__container">
             <div class="footer__paragraph__text__intro">
