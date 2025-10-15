@@ -541,7 +541,7 @@ p,
   pointer-events: none;
 }
 
-.hamburger_navbar-vert{
+.hamburger_navbar-vert {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -553,6 +553,8 @@ p,
   border-radius: 6px;
   transition: background-color 0.2s ease;
 }
+
+/* Media Quries */
 @media screen and (min-width: 320px) and (max-width: 447px) {
   .hamburger_menu {
     display: flex;
@@ -571,7 +573,8 @@ p,
     display: none;
 
   }
-    .navbar-vertical .active{
+
+  .navbar-vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -601,7 +604,8 @@ p,
     display: none;
 
   }
-    .navbar-vertical .active{
+
+  .navbar-vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -631,7 +635,8 @@ p,
     display: none;
 
   }
-    .navbar-vertical .active{
+
+  .navbar-vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -661,7 +666,8 @@ p,
     display: none;
 
   }
-    .navbar-vertical .active{
+
+  .navbar-vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -673,7 +679,7 @@ p,
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .hamburger_menu {
     display: flex;
     align-items: center;
@@ -681,15 +687,18 @@ p,
     justify-content: center;
     visibility: visible;
   }
-    .navbar-horizontal {
+
+  .navbar-horizontal {
     display: none;
 
   }
-    .navbar-vertical {
+
+  .navbar-vertical {
     display: none;
 
   }
-    .navbar-vertical .active{
+
+  .navbar-vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -700,7 +709,7 @@ p,
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 740px){
+@media screen and (min-width: 360px) and (max-width: 740px) {
   .hamburger_menu {
     display: flex;
     align-items: center;
@@ -708,15 +717,18 @@ p,
     justify-content: center;
     visibility: visible;
   }
-    .navbar-horizontal {
+
+  .navbar-horizontal {
     display: none;
 
   }
-    .navbar-vertical {
+
+  .navbar-vertical {
     display: none;
 
   }
-    .navbar-vertical .active{
+
+  .navbar-vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -727,7 +739,7 @@ p,
   }
 }
 
-@media screen and (min-width: 786px) and (max-width: 1200px){
+@media screen and (min-width: 786px) and (max-width: 1200px) {
   .hamburger_menu {
     display: flex;
     align-items: center;
@@ -735,15 +747,18 @@ p,
     justify-content: center;
     visibility: visible;
   }
-    .navbar-horizontal {
+
+  .navbar-horizontal {
     display: none;
 
   }
-    .navbar-vertical {
+
+  .navbar-vertical {
     display: none;
 
   }
-    .navbar-vertical .active{
+
+  .navbar-vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
