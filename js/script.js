@@ -4,7 +4,7 @@
 
 // ------------------------TODO-------------------//
 function hamburgerMenu(){
-    const hamburger_menu = document.querySelector(".navbar-vertical");
+    const hamburger_menu = document.querySelector(".div_navbar_vertical");
     if(hamburger_menu.classList.toggle("active")){
         hamburger_menu.classList.add("active");
     } else{
