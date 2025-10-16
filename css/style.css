@@ -105,7 +105,7 @@ p,
 
 
 /* ---------- Buttons ---------- */
-.btn-primary {
+.main_button {
   display: inline-block;
   padding: 0.75rem 2rem;
   background-color: #2563eb;
@@ -117,7 +117,7 @@ p,
   box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
 }
 
-.btn-primary:hover {
+.main_button:hover {
   background-color: #1d4ed8;
 }
 
