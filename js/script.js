@@ -21,3 +21,17 @@ function Paragraph_UWS(){
     let result = document.querySelector(".resultDiv");
     result.innerHTML = `Result: ${y}`;    
 }
+
+// function Paragraph_UWS() {
+//     let textarea = document.querySelector(".textarea_uws_question");
+//     let y = textarea.value.search(`uws`);
+//     let result = document.querySelector(".resultDiv");
+//     result.innerHTML = `Result: ${y}`;
+//     for (let y = 0; y < textarea.value.length; y++) {
+//         if (y < textarea.value.length) {
+//             let score = textarea.value.substring(y, y + 3);
+//             console.log(score);
+//             result.innerHTML = score;
+//         }
+//     }
+// }
