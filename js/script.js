@@ -25,7 +25,7 @@ function hamburgerMenu(){
 // Modified to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
 function Paragraph_UWS() {
     let textarea = document.querySelector(".textarea_uws_question");
-    let y = textarea.value.search("uws");
+    let y = textarea.value.lastIndexOf("uws");
     let result = document.querySelector(".resultDiv");
     result.innerHTML = `Result: ${y}`;
     for (let y = 0; y < textarea.value.length; y++) {
