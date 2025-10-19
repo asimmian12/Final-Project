@@ -25,12 +25,12 @@ function hamburgerMenu(){
 // Modified to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
 function Paragraph_UWS() {
     let textarea = document.querySelector(".textarea_uws_question");
-    let y = textarea.value.lastIndexOf("uws");
-    let result = document.querySelector(".resultDiv");
-    result.innerHTML = `Result: ${y}`;
-    for (let y = 0; y < textarea.value.length; y++) {
-        if (y < textarea.value.length) {
-            let score = textarea.value.substring(y, y + 3);
+    let letter = textarea.value.lastIndexOf("uws");
+    let result = document.querySelector(".resultDiv").innerHTML = `Results: ${letter}`;
+    // result.innerHTML = `Result: ${y}`;
+    for (let letter = 0; letter < textarea.value.length; letter++) {
+        if (letter < textarea.value.length) {
+            let score = textarea.value.substring(letter, letter + 3);
             console.log(score);
             score = result.innerHTML;
         }
