@@ -31,8 +31,8 @@ function Paragraph_UWS() {
     for (let letter = 0; letter < textarea.value.length; letter++) {
         if (letter < textarea.value.length) {
             let score = textarea.value.substring(letter, letter + 3);
-            console.log(score);
             score = result.innerHTML;
+            console.log(score);
         }
     }
 }
