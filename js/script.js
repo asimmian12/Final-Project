@@ -22,7 +22,7 @@ function hamburgerMenu(){
 //     result.innerHTML = `Result: ${y}`;    
 // }
 
-// Modified to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
+// Modified to use with a for loop to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
 function Paragraph_UWS() {
     let textarea = document.querySelector(".textarea_uws_question");
     let letter = textarea.value.lastIndexOf("uws");
