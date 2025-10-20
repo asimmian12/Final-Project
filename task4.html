@@ -61,21 +61,27 @@
         <img src="https://placehold.co/600x400" alt="Jo Smith product image"
           style="width:100%; height:auto; display:block; margin:0.5rem 0; border-radius:6px;">
         <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
-          <button class="main_button" type="button">Add to Cart</button>
-          <button class="main_button" type="button" style="background:#6b7280; box-shadow:none;">Clear</button>
-          <button class="main_button" type="button" style="background:#ef4444; box-shadow:none;">Remove</button>
+          <button id="add_button" type="button" onclick="addCart()">Add to Cart</button>
+          <button id="clear_button" type="button" style="background:#6b7280; box-shadow:none;"
+            onclick="clearCart()">Clear</button>
+          <button id="subtract_button" type="button" style="background:#ef4444; box-shadow:none;"
+            onclick="removeCart()">Remove from Cart</button>
+          <p id="paragraph-text">0: </p>
         </div>
       </section>
       <!-- Product 2 -->
-      <section class="section_product_section_card"
+       <section class="section_product_section_card"
         style="max-width:320px; padding:1rem; background:#fff; border:1px solid #e5e7eb; border-radius:8px;">
         <h5 class="product-title">Jo Smith</h5>
         <img src="https://placehold.co/600x400" alt="Jo Smith product image"
           style="width:100%; height:auto; display:block; margin:0.5rem 0; border-radius:6px;">
         <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
-          <button class="main_button" type="button">Add to Cart</button>
-          <button class="main_button" type="button" style="background:#6b7280; box-shadow:none;">Clear</button>
-          <button class="main_button" type="button" style="background:#ef4444; box-shadow:none;">Remove</button>
+          <button id="add_button" type="button" onclick="addCart()">Add to Cart</button>
+          <button id="clear_button" type="button" style="background:#6b7280; box-shadow:none;"
+            onclick="clearCart()">Clear</button>
+          <button id="subtract_button" type="button" style="background:#ef4444; box-shadow:none;"
+            onclick="removeCart()">Remove from Cart</button>
+          <p id="paragraph-text">0: </p>
         </div>
       </section>
       <!-- Product 3 -->
@@ -85,9 +91,12 @@
         <img src="https://placehold.co/600x400" alt="Jo Smith product image"
           style="width:100%; height:auto; display:block; margin:0.5rem 0; border-radius:6px;">
         <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
-          <button class="main_button" type="button">Add to Cart</button>
-          <button class="main_button" type="button" style="background:#6b7280; box-shadow:none;">Clear</button>
-          <button class="main_button" type="button" style="background:#ef4444; box-shadow:none;">Remove</button>
+          <button id="add_button" type="button" onclick="addCart()">Add to Cart</button>
+          <button id="clear_button" type="button" style="background:#6b7280; box-shadow:none;"
+            onclick="clearCart()">Clear</button>
+          <button id="subtract_button" type="button" style="background:#ef4444; box-shadow:none;"
+            onclick="removeCart()">Remove from Cart</button>
+          <p id="paragraph-text">0: </p>
         </div>
       </section>
     </section>
@@ -107,13 +116,15 @@
 
       <ul class="footer__paragraph__text__social">
         <li>
-          <a href="https://www.facebook.com" rel="noreferrer" target="_blank" class="footer__paragraph__text__social__links">
+          <a href="https://www.facebook.com" rel="noreferrer" target="_blank"
+            class="footer__paragraph__text__social__links">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
         </li>
 
         <li>
-          <a href="https://www.instagram.com/" rel="noreferrer" target="_blank" class="footer__paragraph__text__social__links">
+          <a href="https://www.instagram.com/" rel="noreferrer" target="_blank"
+            class="footer__paragraph__text__social__links">
             <i class="fa-brands fa-instagram"></i>
           </a>
         </li>
@@ -125,7 +136,8 @@
         </li>
 
         <li>
-          <a href="https://github.com/asimmian12/" rel="noreferrer" target="_blank" class="footer__paragraph__text__social__links">
+          <a href="https://github.com/asimmian12/" rel="noreferrer" target="_blank"
+            class="footer__paragraph__text__social__links">
             <i class="fa-brands fa-github"></i>
           </a>
         </li>
