@@ -13,6 +13,20 @@ function hamburgerMenu(){
     }
     return hamburgerMenu;
 }
+// Need to fix this futher
+function addName(){
+    document.getElementById("main_button").onclick = function(){
+    let name = document.getElementById("name__Input").value;
+    let date = document.getElementById("date__input").value;
+    let income = document.getElementById("income__input").value;
+    let result = document.getElementById("paragraph_text");
+    result = result.innerHTML = `Added Persons:\n Name: ${name}, Date: ${date}, Amount: £${income}`;
+    result = localStorage.setItem(result);
+    result = localStorage.getItem(result);
+    console.log(result);
+    document.writeln(result);
+}
+}
 
 // Modified to use with a for loop to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
 function Paragraph_UWS() {
