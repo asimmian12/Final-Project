@@ -27,7 +27,7 @@ function Paragraph_UWS() {
     let textarea = document.querySelector(".textarea_uws_question");
     let letter = textarea.value.lastIndexOf("uws");
     let result = document.querySelector(".resultDiv").innerHTML = `Results: ${letter}`;
-    // result.innerHTML = `Result: ${y}`;
+    // result.innerHTML = `Result: ${letter}`;
     for (let letter = 0; letter < textarea.value.length; letter++) {
         if (letter < textarea.value.length) {
             let score = textarea.value.substring(letter, letter + 3);
