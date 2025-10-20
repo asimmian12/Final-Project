@@ -14,14 +14,6 @@ function hamburgerMenu(){
     return hamburgerMenu;
 }
 
-// Orignal - I made a function that can uws as character with spaces in mind, i'll modify this to only count uws
-// function Paragraph_UWS(){
-//     let textarea = document.querySelector(".textarea_uws_question");
-//     let y = textarea.value.lastIndexOf("uws");
-//     let result = document.querySelector(".resultDiv");
-//     result.innerHTML = `Result: ${y}`;    
-// }
-
 // Modified to use with a for loop to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
 function Paragraph_UWS() {
     let textarea = document.querySelector(".textarea_uws_question");
