@@ -15,11 +15,12 @@ function hamburgerMenu() {
 }
 // Need to fix this futher
 function addName() {
-    document.getElementById("main_button").onclick = function () {
-        let name = document.getElementById("name__Input").value;
-        let date = document.getElementById("date__input").value;
-        let income = document.getElementById("income__input").value;
-        let result = document.getElementById("paragraph_text");
+    document.querySelector(".main_button").onclick = function () {
+        let name = document.querySelector(".name__Input").value;
+        let date = document.querySelector(".date__input").value;
+        let income = document.querySelector(".income__input").value;
+        let result = document.querySelector(".paragraph_text");
+
         result = result.innerHTML = `Added Persons:\n Name: ${name}, Date: ${date}, Amount: £${income}`;
         result = localStorage.setItem(`${name} ${date}`);
         result = localStorage.getItem(`${name} ${date}`);
@@ -43,44 +44,25 @@ function Paragraph_UWS() {
     // }
 }
 // Add to Cart Btn
-function addCart() {
-    let add = document.getElementById("add_button")
-    let clear = document.getElementById("clear_button")
-    let remove = document.getElementById("subtract_button")
-    let paragraph_update = document.getElementById("paragraph-text");
+function addToCart() {
+    let add = document.querySelector(".add_button")
+    let clear = document.querySelector(".clear_button")
+    let remove = document.querySelector(".subtract_button")
+    let paragraph_update = document.querySelector(".paragraph-text");
     let count = 0;
- 
 
-    add.onclick = function(){
+    add.onclick = function () {
         count = count + 1;
         paragraph_update.innerHTML = `Items Added: ${count}`;
     }
-    }
 
-// Clears Cart Btn
-function clearCart() {
-    let add = document.getElementById("add_button")
-    let clear = document.getElementById("clear_button")
-    let remove = document.getElementById("subtract_button")
-    let paragraph_update = document.getElementById("paragraph-text");
-    let count = 0;
-    
-    clear.onclick = function(){
+    clear.onclick = function () {
         count = count = 0;
         paragraph_update.innerHTML = `Items Cleared: ${count}`;
     }
-    }
-// Removes Cart Btn
-function removeCart() {
-    let add = document.getElementById("add_button")
-    let clear = document.getElementById("clear_button")
-    let remove = document.getElementById("subtract_button")
-    let paragraph_update = document.getElementById("paragraph-text");
-    let count = 0;
-    
-    remove.onclick = function(){
+
+    remove.onclick = function () {
         count = count - 1;
         paragraph_update.innerHTML = `Items Removed: ${count}`;
     }
-    }
-
+}
