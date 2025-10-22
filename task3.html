@@ -15,10 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="favicon/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 <body>
     <!--------Horizontal Navbar-------->
@@ -52,13 +54,12 @@
             </button>
         </div>
 
-        <section class="section__form">
+        <section class="section_forms">
             <form class="section__form">
                 <label class="name">Name:</label>
                 <input type="text" class="name__Input" onclick="addName()">
                 <label class="date">Date:</label>
                 <input type="date" class="date__input" onclick="addName()">
-                <br>
                 <label class="income">Income:</label>
                 <input type="text" class="income__input" onclick="addName()">
             </form>
@@ -70,13 +71,13 @@
             <button type="birthday" name="birthday" value="birthday" class="main_button">Sort By Birthday</button>
         </section>
 
-    </div>
     <div class="div__paragraph__results">
         <ul class="section__results">
             <li class="paragraph_text">Results: </li>
         </ul>
     </div>
-
+</div>
+    
 
     <!----------Footer--------->
     <footer class="footer__paragraph__text">
@@ -123,6 +124,7 @@
         </section>
     </footer>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
