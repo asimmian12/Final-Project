@@ -1,6 +1,13 @@
 /* Asim Mian */
 /* BSc Web and Mobile Development Year 3 */
 /* 15/10/25 */
+
+/* Edge Bulit-in scrollbar to be set to hidden */
+::-webkit-scrollbar{
+  display: none;
+  overflow: hidden;
+}
+
 *::before,
 *::after,
 * {
@@ -38,7 +45,8 @@ p,
   justify-content: center;
   flex-direction: column;
   list-style-type: none;
-  margin-top: 30rem; 
+  margin-top: 30rem;  
+
 }
 
 /* Textarea */
@@ -163,7 +171,7 @@ p,
   flex-direction: column;
   text-decoration: none;
   border-radius: 0.5rem;
-  gap: 5%;
+  gap: 1.25rem;
   padding: 4%;
 }
 
@@ -434,8 +442,7 @@ p,
   background-color: #ffffff;
   border-radius: 0.5rem;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
-  transition: transform .18s ease, box-shadow .18s ease;
-  cursor: default;
+  cursor: pointer;
 }
 
 .div_skills_card:hover {
@@ -631,7 +638,6 @@ h3.paragraph_heading {
   color: #111;
   text-decoration: none;
   border-radius: 6px;
-  transition: background-color 0.2s ease;
 }
 
 .section_form {
