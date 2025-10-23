@@ -156,10 +156,45 @@ ScrollReveal().reveal(".section_orders", {
   ...scrollRevealOption,
 })
 
+// The js code can provide functionality to reveal sections with ScrollReveal for .name
+ScrollReveal().reveal(".name", {
+  ...scrollRevealOption,
+})
+// The js code can provide functionality to reveal sections with ScrollReveal for .name__input
+ScrollReveal().reveal(".name__Input", {
+  ...scrollRevealOption,
+})
+
+// The js code can provide functionality to reveal sections with ScrollReveal for .date
+ScrollReveal().reveal(".date", {
+  ...scrollRevealOption,
+})
+
+// The js code can provide functionality to reveal sections with ScrollReveal for .date__input
+ScrollReveal().reveal(".date__input", {
+  ...scrollRevealOption,
+})
+
+// The js code can provide functionality to reveal sections with ScrollReveal for .income
+ScrollReveal().reveal(".income", {
+  ...scrollRevealOption,
+})
+
+// The js code can provide functionality to reveal sections with ScrollReveal for .input__income
+ScrollReveal().reveal(".income__input", {
+  ...scrollRevealOption,
+})
+
+
 // The js code can provide functionality to reveal sections with ScrollReveal for .section_product_section_card
 ScrollReveal().reveal(".section_product_section_card", {
   ...scrollRevealOption,
 })
+
+// The js code can provide functionality to reveal sections with ScrollReveal for .paragraph_heading
+ScrollReveal().reveal(".paragraph_heading", {
+  ...scrollRevealOption,
+});
 
 // The js code can provide functionality to reveal sections with ScrollReveal for .footer__paragraph__text
 ScrollReveal().reveal(".footer__paragraph__text", {

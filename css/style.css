@@ -124,7 +124,6 @@ p,
   background-color: #374151;
 }
 
-
 .section__form {
   display: flex;
   align-items: center;
@@ -132,6 +131,7 @@ p,
   flex-direction: column;
   text-align: center;
 }
+
 .section_forms {
   align-items: center;
   justify-content: center;
@@ -140,7 +140,6 @@ p,
   gap: 5%;
   margin: 4%;
 }
-
 
 /* ---------- Buttons ---------- */
 .main_button {
@@ -168,12 +167,58 @@ p,
   padding: 4%;
 }
 
+.add_button{
+  display: block;
+  padding: 0.75rem 2rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+.add_button:hover {
+  background-color: #1d4ed8;
+}
+
+.subtract_button{
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+.subtract_button:hover {
+  background-color: #f14343;
+}
+
+.clear_button{
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #6b7280;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+.clear_button:hover {
+  background-color: #7b8391;
+}
+
 .section_orders {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 5%;
+  gap: 1.25rem;
+  flex-wrap: wrap;
   margin: 5%;
 }
 
@@ -246,6 +291,22 @@ p,
   text-align: center;
 }
 
+.section_product_section_card{
+  max-width:320px; 
+  padding:1rem; 
+  background:#fff; 
+  border:1px solid #e5e7eb; 
+  border-radius:8px;
+}
+
+.section_product_section_card img{
+  width: 100%; 
+  height: 100%; 
+  display: block; 
+  margin: 0.5rem 0; 
+  border-radius:6px;
+}
+
 /* ---------- About Section ---------- */
 
 .section_about_us {
@@ -275,6 +336,15 @@ p,
   font-weight: 900;
   color: #1f2937;
   margin-bottom: 1.5rem;
+}
+
+.section_uws_question{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.10rem;
+  margin-left: 30%;
 }
 
 .about-section {
