@@ -3,7 +3,6 @@
 <!-- 15/10/25 -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Asim Mian">
@@ -23,7 +22,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
-
 <body>
     <!--------Horizontal Navbar-------->
     <div class="div_navbar_horizontal">
@@ -55,25 +53,31 @@
                 </div>
             </button>
         </div>
-
+        
         <section class="section_forms">
             <form class="section__form">
-                <input type="text" id="name" placeholder="Name">
-                <input type="number" id="income" placeholder="Income">
-                <input type="date" id="birthday" placeholder="Birthday">
-                <button type="button" onclick="addPerson(event)" class="main_button">Add Person</button>
-                <button type="button" onclick="sortByIncome(event)" class="main_button">Sort by Income (Highest First)</button>
-                <button type="button" onclick="sortByBirthday(event)" class="main_button">Sort by Birthday (Oldest First)</button>
+                <label class="name">Name:</label>
+                <input type="text" class="name__Input" onclick="addName()">
+                <label class="date">Date:</label>
+                <input type="date" class="date__input" onclick="addName()">
+                <label class="income">Income:</label>
+                <input type="text" class="income__input" onclick="addName()">z
             </form>
         </section>
 
-        <div class="div__paragraph__results">
-            <ul class="section__results">
-                <li class="paragraph_text">Results: </li>
-            </ul>
-        </div>
-    </div>
+        <section class="buttons">
+            <button type="add_person" name="add_person" value="add_person" class="main_button">Add Person</button>
+            <button type="income" name="income" value="income" class="main_button">Sort Income</button>
+            <button type="birthday" name="birthday" value="birthday" class="main_button">Sort By Birthday</button>
+        </section>
 
+    <div class="div__paragraph__results">
+        <ul class="section__results">
+            <li class="paragraph_text">Results: </li>
+        </ul>
+    </div>
+</div>
+    
 
     <!----------Footer--------->
     <footer class="footer__paragraph__text">
@@ -123,5 +127,4 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js"></script>
 </body>
-
 </html>

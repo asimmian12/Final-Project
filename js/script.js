@@ -12,64 +12,21 @@ function hamburgerMenu() {
     hamburger_menu.classList.remove("active");
   }
   return hamburgerMenu;
+}
+// Need to fix this futher
+function addName() {
+  document.querySelector(".main_button").onclick = function () {
+    let name = document.querySelector(".name__Input").value;
+    let date = document.querySelector(".date__input").value;
+    let income = document.querySelector(".income__input").value;
+    let result = document.querySelector(".paragraph_text");
 
-// Completed Task 3
-}class Person {
-  constructor(name, income, birthday) {
-    this.name = name;
-    this.income = parseFloat(income);
-    this.birthday = new Date(birthday);
+    result = result.innerHTML = `Added Persons:\n Name: ${name}, Date: ${date}, Amount: £${income}`;
+    result = localStorage.setItem(`${name} ${date}`);
+    result = localStorage.getItem(`${name} ${date}`);
+    console.log(name, date);
+    document.writeln(name, date);
   }
-}
-
-let persons = new Array();
-
-function addPerson(event) {
-  event.preventDefault(); 
-
-  let name = document.getElementById("name").value;
-  let income = document.getElementById("income").value;
-  let birthday = document.getElementById("birthday").value;
-
-  if (name && income && birthday) {
-    let newPerson = new Person(name, income, birthday);
-    persons.push(newPerson);
-
-
-    document.getElementById("name").value = "";
-    document.getElementById("income").value = "";
-    document.getElementById("birthday").value = "";
-
-    updatePersonsList();
-  } else {
-    window.alert("Please fill in all fields!");
-  }
-}
-
-function updatePersonsList() {
-  let ul = document.querySelector(".section__results");
-
-  
-  ul.querySelectorAll("li:not(.paragraph_text)").forEach(li => li.remove());
-
- 
-  persons.forEach(p => {
-    let li = document.createElement("li");
-    li.textContent = `Name: ${p.name}, Income: ${p.income}, Birthday: ${p.birthday.toLocaleDateString()}`;
-    ul.appendChild(li);
-  });
-}
-
-function sortByIncome(event) {
-  event.preventDefault(); 
-  persons.sort((a, b) => b.income - a.income);
-  updatePersonsList();
-}
-
-function sortByBirthday(event) {
-  event.preventDefault(); 
-  persons.sort((a, b) => a.birthday - b.birthday);
-  updatePersonsList();
 }
 
 // Modified to use with a for loop to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
