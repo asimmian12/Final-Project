@@ -49,7 +49,6 @@ function addToCart() {
   let add = document.querySelector(".add_button");
   let clear = document.querySelector(".clear_button");
   let remove = document.querySelector(".subtract_button");
-  let paragraph_update = document.querySelector(".paragraph_text");
   let price_text = document.querySelector(".price_text");
   let quanity_text = document.querySelector(".quanity_text");
   let quanity = Number(1);
@@ -60,7 +59,6 @@ function addToCart() {
     count = count + 1;
     quanity = quanity + 1;
     price = price + 12.99;
-    paragraph_update.innerHTML = `Items Added: ${count}`;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
   }
@@ -69,7 +67,6 @@ function addToCart() {
     count = count = 0;
     quanity = quanity = 0;
     price = price = 0;
-    paragraph_update.innerHTML = `Items Added: ${count}`;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
   }
@@ -78,7 +75,6 @@ function addToCart() {
     count = count - 1;
     quanity = quanity - 1;
     price = price - 12.99;
-    paragraph_update.innerHTML = `Items Added: ${count}`;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
   }
@@ -89,7 +85,6 @@ function Cart() {
   let add = document.querySelector(".add-button");
   let clear = document.querySelector(".clear-button");
   let remove = document.querySelector(".subtract-button");
-  let paragraph_update = document.querySelector(".paragraph-text");
   let price_text = document.querySelector(".price-text");
   let quanity_text = document.querySelector(".quanity-text");
   let quanity = Number(1);
@@ -100,7 +95,6 @@ function Cart() {
     count = count + 1;
     quanity = quanity + 1;
     price = price + 12.99;
-    paragraph_update.innerHTML = `Items Added: ${count}`;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
   }
@@ -109,7 +103,6 @@ function Cart() {
     count = count = 0;
     quanity = quanity = 0;
     price = price = 0;
-    paragraph_update.innerHTML = `Items Added: ${count}`;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
   }
@@ -118,7 +111,6 @@ function Cart() {
     count = count - 1;
     quanity = quanity - 1;
     price = price - 12.99;
-    paragraph_update.innerHTML = `Items Added: ${count}`;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
   }
@@ -129,7 +121,6 @@ function Carts() {
   let add = document.querySelector(".add__button");
   let clear = document.querySelector(".clear__button");
   let remove = document.querySelector(".subtract__button");
-  let paragraph_update = document.querySelector(".paragraph__text");
   let price_text = document.querySelector(".price__text");
   let quanity_text = document.querySelector(".quanity__text");
   let quanity = Number(1);
@@ -140,7 +131,6 @@ function Carts() {
     count = count + 1;
     quanity = quanity + 1;
     price = price + 12.99;
-    paragraph_update.innerHTML = `Items Added: ${count}`;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
   }
@@ -149,7 +139,6 @@ function Carts() {
     count = count = 0;
     quanity = quanity = 0;
     price = price = 0;
-    paragraph_update.innerHTML = `Items Added: ${count}`;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
   }
@@ -158,7 +147,6 @@ function Carts() {
     count = count - 1;
     quanity = quanity - 1;
     price = price - 12.99;
-    paragraph_update.innerHTML = `Items Added: ${count}`;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
   }
