@@ -15,74 +15,72 @@ function hamburgerMenu() {
 }
 
 // TODO: Need to fix this Class futher
-class Person {
-  constructor(name, birthday, income) {
-    this.name = name;
-    this.birthday = birthday;
-    this.income = income;
-  }
-}
-  
-let persons = [
-  new Person((document.getElementById("name__Input").value)),
-  new Person((document.getElementById("date__input").value)),
-  new Person((document.getElementById("income__input").value)),
-];
+// class Person {
+//   constructor(name, birthday, income) {
+//     this.name = name;
+//     this.birthday = birthday;
+//     this.income = income;
+//   }
+// }
 
-const person1 = new Person("Asim", "30/12/02", "30");
-const person2 = new Person("Asim", "30/12/02", "30");
-const person3 = new Person("Asim", "30/12/02", "30");
+// let persons = [
+//   new Person((document.getElementById("name__Input").value)),
+//   new Person((document.getElementById("date__input").value)),
+//   new Person((document.getElementById("income__input").value)),
+// ];
 
-for (let i = 0; i < persons.length; i++) {
-  let p = persons[i];
-  console.log(p);
-}
+// let person1 = new Person("Asim", "30/12/02", "30");
+// let person2 = new Person("Asim", "30/12/02", "30");
+// let person3 = new Person("Asim", "30/12/02", "30");
 
-document.getElementById("birthday").onclick = function (name, birthday, income, a, b) {
-  name = document.getElementById("name__Input").value;
-  birthday = document.getElementById("date__input").value;
-  income = document.getElementById("income__input").value;
-  let result = document.getElementById("paragraph_text");
-  result.innerHTML = result.sort(a, b);
-  return a.birthday - b.birthday;
-}
+// for (let i = 0; i < persons.length; i++) {
+//   let p = persons[i];
+//   console.log(p);
+// }
 
-document.getElementById("income").onclick = function (name, birthday, income, a, b) {
-  name = document.getElementById("name__Input").value;
-  birthday = document.getElementById("date__input").value;
-  income = document.getElementById("income__input").value;
-  let result = document.getElementById("paragraph_text");
-  result.innerHTML = result.sort(a, b);
-  return a.income - b.income;
-}
+// document.getElementById("birthday").onclick = function (name, birthday, income, a, b) {
+//   name = document.getElementById("name__Input").value;
+//   birthday = document.getElementById("date__input").value;
+//   income = document.getElementById("income__input").value;
+//   let result = document.getElementById("paragraph_text");
+//   result.innerHTML = result.sort(a, b);
+//   return a.birthday - b.birthday;
+// }
 
-function add_person() {
-  document.getElementById("add_person").onclick = function () {
-    let name = document.getElementById("name__Input").value;
-    let birthday = document.getElementById("date__input").value;
-    let income = document.getElementById("income__input").value;
-    let result = document.getElementById("paragraph_text");
-    result.innerHTML = (`Added Person: Name: ${name}, Date: ${birthday}, Income: ${income}`);
-  }
-}
+// document.getElementById("income").onclick = function (name, birthday, income, a, b) {
+//   name = document.getElementById("name__Input").value;
+//   birthday = document.getElementById("date__input").value;
+//   income = document.getElementById("income__input").value;
+//   let result = document.getElementById("paragraph_text");
+//   result.innerHTML = result.sort(a, b);
+//   return a.income - b.income;
+// }
 
-window.onload = function () {
-  add_person();
-}
+// function add_person() {
+//   document.getElementById("add_person").onclick = function () {
+//     let name = document.getElementById("name__Input").value;
+//     let birthday = document.getElementById("date__input").value;
+//     let income = document.getElementById("income__input").value;
+//     let result = document.getElementById("paragraph_text");
+//     result.innerHTML = (`Added Person: Name: ${name}, Date: ${birthday}, Income: ${income}`);
+//   }
+// }
+
+// window.onload = function () {
+//   add_person();
+// }
 
 
 // TODO: Modified to use with a for loop to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
 function Paragraph_UWS() {
   let textarea = document.querySelector(".textarea_uws_question");
-  let letter = textarea.value.lastIndexOf("uws");
   let result = document.querySelector(".resultDiv");
-  result.innerHTML = `Result: ${letter}`;
-  // for (let letter = 0; letter < textarea.value.length; letter++) {
-  //     if (letter < textarea.value.length) {
-  //         let score = textarea.value.substring(letter, letter + 3);
-  //         console.log(score);
-  //         score = result.innerHTML;
-  //     }
+  let letter = textarea.value;
+  result.innerHTML = `${letter}`;
+  // for (let i = 0; i < letter[i].length; i++) {
+  //   let test = letter[i];
+  //   console.log(test);
+  //   result.innerHTML = `${test}`;
   // }
 }
 
