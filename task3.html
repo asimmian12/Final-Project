@@ -57,23 +57,23 @@
         <section class="section_forms">
             <form class="section__form">
                 <label class="name">Name:</label>
-                <input type="text" class="name__Input" onclick="addName()">
+                <input type="text" id="name__Input">
                 <label class="date">Date:</label>
-                <input type="date" class="date__input" onclick="addName()">
+                <input type="date" id="date__input">
                 <label class="income">Income:</label>
-                <input type="text" class="income__input" onclick="addName()">
+                <input type="text" id="income__input">
             </form>
         </section>
 
         <section class="buttons">
-            <button type="add_person" name="add_person" value="add_person" class="main_button">Add Person</button>
-            <button type="income" name="income" value="income" class="main_button">Sort Income</button>
-            <button type="birthday" name="birthday" value="birthday" class="main_button">Sort By Birthday</button>
+            <button type="add_person" name="add_person" value="add_person" class="main_button" id="add_person">Add Person</button>
+            <button type="income" name="income" value="income" class="main_button" id="income">Sort Income</button>
+            <button type="birthday" name="birthday" value="birthday" class="main_button" id="birthday">Sort By Birthday</button>
         </section>
 
     <div class="div__paragraph__results">
         <ul class="section__results">
-            <li class="paragraph_text">Results: </li>
+            <li id="paragraph_text">Results: </li>
         </ul>
     </div>
 </div>
