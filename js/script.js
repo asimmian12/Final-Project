@@ -75,13 +75,16 @@ function hamburgerMenu() {
 function Paragraph_UWS() {
   let textarea = document.querySelector(".textarea_uws_question");
   let result = document.querySelector(".resultDiv");
-  let letter = textarea.value;
+  let letter = textarea.value.lastIndexOf("uws");
   result.innerHTML = `${letter}`;
-  // for (let i = 0; i < letter[i].length; i++) {
-  //   let test = letter[i];
-  //   console.log(test);
-  //   result.innerHTML = `${test}`;
-  // }
+  for (let i = 0; i < letter.length; i++) {
+    if (letter.matchAll(" ")) {
+      console.log("Contains spaces");
+      let test = letter.length;
+      console.log(test);
+      result.innerHTML = `${test}`;
+    }
+  }
 }
 
 // Add to Cart Btn For Card 1
