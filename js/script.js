@@ -2,7 +2,7 @@
 // BSc Web and Mobile Development (Year 3)
 // 15/10/2025 
 
-// TODO: Try to futher fix Asim!!!!
+// TODO: Try to further fix Asim!!!!
 // Hamburger Menu
 function hamburgerMenu() {
   let hamburger_menu = document.querySelector(".div_navbar_vertical");
@@ -14,7 +14,7 @@ function hamburgerMenu() {
   return hamburgerMenu;
 }
 
-// TODO: Need to fix this Class futher
+// TODO: Need to fix this Class further
 // class Person {
 //   constructor(name, birthday, income) {
 //     this.name = name;
@@ -70,19 +70,18 @@ function hamburgerMenu() {
 //   add_person();
 // }
 
-
 // TODO: Modified to use with a for loop to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
 function Paragraph_UWS() {
   let textarea = document.querySelector(".textarea_uws_question");
   let result = document.querySelector(".resultDiv");
-  let letter = textarea.value.lastIndexOf("uws");
-  result.innerHTML = `${letter}`;
+  let letter = textarea.value;
   for (let i = 0; i < letter.length; i++) {
-    if (letter.matchAll(" ")) {
-      console.log("Contains spaces");
-      let test = letter.length;
-      console.log(test);
-      result.innerHTML = `${test}`;
+    if (letter.split(" ").join("")) {
+      if (letter.includes("uws")) {
+        let test = letter.length;
+        result.innerHTML = `Found Last Occurrence of UWS at line: ${test}`;
+        console.log(`Found Last Occurrence of UWS at line: ${test}`);
+      }
     }
   }
 }
