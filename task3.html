@@ -45,39 +45,39 @@
         <div class="hamburger_menu">
             <button class="hamburger-button" onclick="hamburgerMenu()">
                 <i class="fa-solid fa-bars"></i>
-                <div class="hamburger_navbar">
-                    <a href="/index.html" class="hamburger_navbar-vert">Task 1</a>
-                    <a href="/task2.html" class="hamburger_navbar-vert">Task 2</a>
-                    <a href="/task3.html" class="hamburger_navbar-vert">Task 3</a>
-                    <a href="/task4.html" class="hamburger_navbar-vert">Task 4</a>
-                </div>
             </button>
+            <div class="hamburger_navbar">
+                <a href="/index.html" class="hamburger_navbar-vert">Task 1</a>
+                <a href="/task2.html" class="hamburger_navbar-vert">Task 2</a>
+                <a href="/task3.html" class="hamburger_navbar-vert">Task 3</a>
+                <a href="/task4.html" class="hamburger_navbar-vert">Task 4</a>
+            </div>
         </div>
-        
+
         <section class="section_forms">
             <form class="section__form">
-                <label class="name">Name:</label>
-                <input type="text" id="name__Input">
-                <label class="date">Date:</label>
-                <input type="date" id="date__input">
-                <label class="income">Income:</label>
-                <input type="text" id="income__input">
+                Name: <input type="text" id="name">
+                Birthday: <input type="date" id="birthday">
+                Income: <input type="text" id="income">
             </form>
         </section>
 
         <section class="buttons">
-            <button type="add_person" name="add_person" value="add_person" class="main_button" id="add_person">Add Person</button>
-            <button type="income" name="income" value="income" class="main_button" id="income">Sort Income</button>
-            <button type="birthday" name="birthday" value="birthday" class="main_button" id="birthday">Sort By Birthday</button>
+            <button type="submit" name="add_person" value="add_person" class="main_button" id="add_person"
+                onclick="compareMoney()">Add Person</button>
+            <button type="submit" name="birthday" value="birthday" class="main_button" id="birthday"
+                onclick="compareMoney()">Sort By Birthday</button>
+            <button type="submit" name="income" value="income" class="main_button" id="income"
+                onclick="compareMoney()">Sort Income</button>
         </section>
 
-    <div class="div__paragraph__results">
-        <ul class="section__results">
-            <li id="paragraph_text">Results: </li>
-        </ul>
+        <div class="div__paragraph__results">
+            <ul class="section__results">
+                <li id="paragraph_text">Results: </li>
+            </ul>
+        </div>
     </div>
-</div>
-    
+
 
     <!----------Footer--------->
     <footer class="footer__paragraph__text">
