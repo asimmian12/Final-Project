@@ -76,15 +76,15 @@ function Paragraph_UWS() {
   let result = document.querySelector(".resultDiv");
   let letter = textarea.value;
   for (let i = 0; i < letter.length; i++) {
-    if (letter.split(" ").join("")) {
       if (letter.includes("uws")) {
-        let test = letter.length;
+        // Focus on the line below!!!
+        let test = letter.length - letter.lastIndexOf("uws");
         result.innerHTML = `Found Last Occurrence of UWS at line: ${test}`;
         console.log(`Found Last Occurrence of UWS at line: ${test}`);
       }
     }
   }
-}
+
 
 // Add to Cart Btn For Card 1
 function addToCart() {
