@@ -15,40 +15,51 @@ function hamburgerMenu() {
 }
 
 // TODO: Need to fix this Class further
-// class Person {
-//   constructor(name, birthday, income) {
-//     this.name = name;
-//     this.birthday = birthday;
-//     this.income = income;
-//   }
-// }
+class Person {
+  constructor(name, birthday, income) {
+    this.name = name;
+    this.birthday = birthday;
+    this.income = income;
+  }
+}
 
-// function compareMoney() {
-//   let persons = [
-//     new Person(document.getElementById("name").value, parseInt(document.getElementById("birthday").value), parseInt(document.getElementById("income").value)),
-//     new Person(document.getElementById("name").value, parseInt(document.getElementById("birthday").value), parseInt(document.getElementById("income").value)),
-//     new Person(document.getElementById("name").value, parseInt(document.getElementById("birthday").value), parseInt(document.getElementById("income").value)),
-//   ];
+let persons = [];
+let result = document.getElementById("paragraph_text");
 
-//   persons.sort(function (a, b) {
-//     persons.push(persons);
-//     console.log(persons);
-//     return b.birthday - a.birthday;
-//   });
+function comparePeople() {
+  let rest = new Person(document.getElementById("name").value, parseInt(document.getElementById("birthday").value), parseInt(document.getElementById("income").value));
+  persons.push(rest);
 
-//   persons.sort(function (a, b) {
-//     persons.push(persons);
-//     console.log(persons);
-//     return b.income - a.income;
-//   });
+  for (let i = 0; i < persons.length; i++) {
+    console.log(persons);
+    result.innerHTML =  ` Name: ${persons[i].name}` + ` Birthday: ${persons[i].birthday}` + ` Income: ${persons[i].income}`;
+  }
 
-//   let highest = persons[0];
-//   let lowest = persons[persons.length - 1];
+}
 
-//   let result = document.getElementById("paragraph_text");
-//   result.innerHTML = " Highest" + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
-//     + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income;
-// }
+function sortByBirthday() {
+  persons.sort(function (a, b) {
+    return b.birthday - a.birthday;
+  });
+
+  let highest = persons[0];
+  let lowest = persons[persons.length - 1];
+
+  result.innerHTML = " Highest" + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
+    + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income;
+}
+
+function sortByIncome() {
+  persons.sort(function (a, b) {
+    return b.income - a.income;
+  });
+
+  let highest = persons[0];
+  let lowest = persons[persons.length - 1];
+
+  result.innerHTML = " Highest" + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
+    + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income;
+}
 
 // TODO: Modified to use with a for loop to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
 function Paragraph_UWS() {
