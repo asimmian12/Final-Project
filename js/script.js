@@ -43,7 +43,7 @@ function comparePeople() {
 
 function sortByBirthday() {
   persons.sort(function (a, b) {
-    return b.birthday - a.birthday;
+    return a.birthday - b.birthday;
   });
 
   let highest = persons[0];
