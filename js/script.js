@@ -50,7 +50,7 @@ function sortByIncome() {
   });
   let highest = persons[0];
   let lowest = persons[persons.length - 1];
-  result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
+   result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
     + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
 
 }
