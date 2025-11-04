@@ -14,7 +14,7 @@ function hamburgerMenu() {
   return hamburgerMenu;
 }
 
-// TODO: Need to fix this Class further
+// TODO: Minor Bugs for Class, but it works, nonetheless
 class Person {
   constructor(name, birthday, income) {
     this.name = name;
