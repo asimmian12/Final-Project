@@ -72,6 +72,7 @@ function sortByIncome() {
 
 }
 
+
 // TODO: Modified to use with a for loop to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
 function Paragraph_UWS() {
   let textarea = document.querySelector(".textarea_uws_question");
