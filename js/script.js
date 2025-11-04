@@ -22,46 +22,35 @@ class Person {
     this.income = income;
   }
 }
-
 let persons = [];
 let result = document.getElementById("paragraph_text");
-
 function comparePeople() {
   let rest = new Person(document.getElementById("name").value, parseInt(document.getElementById("birthday").value), parseInt(document.getElementById("income").value));
   persons.push(rest);
-
   for (let i = 0; i < persons.length; i++) {
     console.log(persons);
-    
     result.innerHTML += `<ul class="section__results"> <li id="paragraph_text"> Name: ${persons[i].name}` + ` Birthday: ${persons[i].birthday}` + ` Income: ${persons[i].income}</li> </ul>`;
   }
-
 }
 
 function sortByBirthday() {
   persons.sort(function (a, b) {
     return a.birthday - b.birthday;
   });
-
   let highest = persons[0];
   let lowest = persons[persons.length - 1];
-
   result.innerHTML += `<ul class="section__results"` + ` <li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
     + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
-
   result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
     + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
 }
-
 function sortByIncome() {
   persons.sort(function (a, b) {
     return b.income - a.income;
   });
-
   let highest = persons[0];
   let lowest = persons[persons.length - 1];
-
-   result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
+  result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
     + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
 
 }
