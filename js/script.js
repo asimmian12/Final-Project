@@ -33,10 +33,7 @@ function comparePeople() {
   for (let i = 0; i < persons.length; i++) {
     console.log(persons);
     
-    result.innerHTML +=  
-    `<ul class="section__results">
-    <li id="paragraph_text"> Name: ${persons[i].name}` + ` Birthday: ${persons[i].birthday}` + ` Income: ${persons[i].income}</li>
-    </ul>`;
+    result.innerHTML += `<ul class="section__results"> <li id="paragraph_text"> Name: ${persons[i].name}` + ` Birthday: ${persons[i].birthday}` + ` Income: ${persons[i].income}</li> </ul>`;
   }
 
 }
@@ -49,12 +46,10 @@ function sortByBirthday() {
   let highest = persons[0];
   let lowest = persons[persons.length - 1];
 
-  result.innerHTML += `<ul class="section__results"` + 
- ` <li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
+  result.innerHTML += `<ul class="section__results"` + ` <li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
     + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
 
-  result.innerHTML += `<ul class="section__results"` + 
- `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
+  result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
     + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
 }
 
@@ -66,12 +61,10 @@ function sortByIncome() {
   let highest = persons[0];
   let lowest = persons[persons.length - 1];
 
-   result.innerHTML += `<ul class="section__results"` + 
- `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
+   result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
     + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
 
 }
-
 
 // TODO: Modified to use with a for loop to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
 function Paragraph_UWS() {
