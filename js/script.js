@@ -22,11 +22,14 @@ class Person {
     this.income = income;
   }
 }
+
 let persons = [];
 let result = document.getElementById("paragraph_text");
 function comparePeople() {
+
   let rest = new Person(document.getElementById("name").value, parseInt(document.getElementById("birthday").value), parseInt(document.getElementById("income").value));
   persons.push(rest);
+
   for (let i = 0; i < persons.length; i++) {
     console.log(persons);
     result.innerHTML += `<ul class="section__results"> <li id="paragraph_text"> Name: ${persons[i].name}` + ` Birthday: ${persons[i].birthday}` + ` Income: ${persons[i].income}</li> </ul>`;
@@ -37,6 +40,7 @@ function sortByBirthday() {
   persons.sort(function (a, b) {
     return a.birthday - b.birthday;
   });
+
   let highest = persons[0];
   let lowest = persons[persons.length - 1];
   result.innerHTML += `<ul class="section__results"` + ` <li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
@@ -44,13 +48,15 @@ function sortByBirthday() {
   result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
     + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
 }
+
 function sortByIncome() {
   persons.sort(function (a, b) {
     return b.income - a.income;
   });
+
   let highest = persons[0];
   let lowest = persons[persons.length - 1];
-   result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
+  result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
     + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
 
 }
@@ -61,9 +67,8 @@ function Paragraph_UWS() {
   let result = document.querySelector(".resultDiv");
   let letter = textarea.value;
   for (let i = 0; i < letter.length; i++) {
-    if (letter.includes(" ") <= letter.lastIndexOf("uws")) {
-      // Focus on the line below!!!
-      let test = (letter.length - letter.includes(" ") - letter.lastIndexOf("uws"));
+    if (letter.includes(" ")) {
+      let test = (letter.lastIndexOf("uws") - letter.includes(" "));
       result.innerHTML = `Found Last Occurrence of UWS at line: ${test}`;
       console.log(`Found Last Occurrence of UWS at line: ${test}`);
     }
@@ -254,7 +259,7 @@ window.onload = function () {
   ScrollReveal().reveal(".name", {
     ...scrollRevealOption,
   })
-  
+
   ScrollReveal().reveal(".name__Input", {
     ...scrollRevealOption,
   })
