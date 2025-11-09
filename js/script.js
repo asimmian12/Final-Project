@@ -75,6 +75,17 @@ function Paragraph_UWS() {
   }
 }
 
+// function Paragraph_UWS() {
+//   let textarea = document.querySelector(".textarea_uws_question");
+//   let result = document.querySelector(".resultDiv");
+//   let letter = textarea.value;
+//   for (let i = 0; i < letter.length; i++) {
+//       let test = (letter.search("uws") - letter.includes(" "));
+//       result.innerHTML = `Found Last Occurrence of UWS at line: ${test}`;
+//       console.log(`Found Last Occurrence of UWS at line: ${test}`);
+//     }
+//   }
+
 // Add to Cart Btn For Card 1
 function addToCart() {
   let add = document.querySelector(".add_button");
