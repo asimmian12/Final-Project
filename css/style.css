@@ -46,7 +46,19 @@ p,
   flex-direction: column;
   list-style-type: none;
   margin-top: 30rem;  
+}
 
+.div__paragraph__results > .section__results {
+  list-style-type: none;
+}
+
+#resizable{
+  width: 200px;
+  height: 200px;
+}
+
+#sortable{
+  list-style-type: none;
 }
 
 /* Textarea */
@@ -175,7 +187,7 @@ p,
   padding: 4%;
 }
 
-.add_button{
+.add_button {
   display: block;
   padding: 0.75rem 2rem;
   background-color: #2563eb;
@@ -190,7 +202,7 @@ p,
   background-color: #1d4ed8;
 }
 
-.subtract_button{
+.subtract_button {
   display: inline-block;
   padding: 0.75rem 2rem;
   background-color: #ef4444;
@@ -205,7 +217,7 @@ p,
   background-color: #f14343;
 }
 
-.clear_button{
+.clear_button {
   display: inline-block;
   padding: 0.75rem 2rem;
   background-color: #6b7280;
@@ -220,7 +232,7 @@ p,
   background-color: #7b8391;
 }
 
-.add-button{
+.add-button {
   display: block;
   padding: 0.75rem 2rem;
   background-color: #2563eb;
@@ -235,7 +247,7 @@ p,
   background-color: #1d4ed8;
 }
 
-.subtract-button{
+.subtract-button {
   display: inline-block;
   padding: 0.75rem 2rem;
   background-color: #ef4444;
@@ -250,7 +262,7 @@ p,
   background-color: #f14343;
 }
 
-.clear-button{
+.clear-button {
   display: inline-block;
   padding: 0.75rem 2rem;
   background-color: #6b7280;
@@ -265,7 +277,7 @@ p,
   background-color: #7b8391;
 }
 
-.add__button{
+.add__button {
   display: block;
   padding: 0.75rem 2rem;
   background-color: #2563eb;
@@ -280,7 +292,7 @@ p,
   background-color: #1d4ed8;
 }
 
-.subtract__button{
+.subtract__button {
   display: inline-block;
   padding: 0.75rem 2rem;
   background-color: #ef4444;
@@ -295,7 +307,7 @@ p,
   background-color: #f14343;
 }
 
-.clear__button{
+.clear__button {
   display: inline-block;
   padding: 0.75rem 2rem;
   background-color: #6b7280;
@@ -389,20 +401,20 @@ p,
   text-align: center;
 }
 
-.section_product_section_card{
-  max-width:320px; 
-  padding:1rem; 
-  background:#fff; 
-  border:1px solid #e5e7eb; 
-  border-radius:8px;
+.section_product_section_card {
+  max-width: 320px;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
 }
 
-.section_product_section_card img{
-  width: 100%; 
-  height: 100%; 
-  display: block; 
-  margin: 0.5rem 0; 
-  border-radius:6px;
+.section_product_section_card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0.5rem 0;
+  border-radius: 6px;
 }
 
 /* ---------- About Section ---------- */
@@ -436,7 +448,7 @@ p,
   margin-bottom: 1.5rem;
 }
 
-.section_uws_question{
+.section_uws_question {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -617,7 +629,6 @@ h3.paragraph_heading {
   padding: 4rem 1.5rem;
   background-color: #E5E7EB;
 }
-
 
 /* ---------- Footer ---------- */
 .footer__paragraph__text {
