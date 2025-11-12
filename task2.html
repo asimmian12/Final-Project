@@ -3,118 +3,127 @@
 <!-- 15/10/25 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Asim Mian">
-    <meta name="description" content="This is my professional website for Dr Saajad Class">
-    <meta name="keywords" content="Work, Assessment, Practical, Web Development, Programming, HTML, CSS, JS, Tailwind">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="favicon/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <meta charset="UTF-8">
+  <meta name="author" content="Asim Mian">
+  <meta name="description" content="This is my professional website for Dr Saajad Class">
+  <meta name="keywords" content="Work, Assessment, Practical, Web Development, Programming, HTML, CSS, JS, Tailwind">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="favicon_io/favicon.ico" type="favicon/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 </head>
+
 <body>
-    <!--------Horizontal Navbar-------->
-    <div class="div_navbar_horizontal">
-        <a href="/index.html" class="nav-link">Task 1</a>
-        <a href="/task2.html" class="nav-link active">Task 2</a>
-        <a href="/task3.html" class="nav-link">Task 3</a>
-        <a href="/task4.html" class="nav-link">Task 4</a>
-        <a href="/task5.html" class="nav-link">Task 5</a>
+  <!--------Horizontal Navbar-------->
+  <div class="div_navbar_horizontal">
+    <a href="/index.html" class="nav-link">Task 1</a>
+    <a href="/task2.html" class="nav-link active">Task 2</a>
+    <a href="/task3.html" class="nav-link">Task 3</a>
+    <a href="/task4.html" class="nav-link">Task 4</a>
+    <a href="/task5.html" class="nav-link">Task 5</a>
+  </div>
+
+  <!--------div_layout---------->
+  <div class="div_layout">
+    <!------Vertical Navbar------->
+    <div class="div_navbar_vertical">
+      <a href="/index.html" class="nav__link__vert">Task 1</a>
+      <a href="/task2.html" class="nav__link__vert active">Task 2</a>
+      <a href="/task3.html" class="nav__link__vert">Task 3</a>
+      <a href="/task4.html" class="nav__link__vert">Task 4</a>
+      <a href="/task5.html" class="nav__link__vert">Task 5</a>
     </div>
 
-    <!--------div_layout---------->
-    <div class="div_layout">
-        <!------Vertical Navbar------->
-        <div class="div_navbar_vertical">
-            <a href="/index.html" class="nav__link__vert">Task 1</a>
-            <a href="/task2.html" class="nav__link__vert active">Task 2</a>
-            <a href="/task3.html" class="nav__link__vert">Task 3</a>
-            <a href="/task4.html" class="nav__link__vert">Task 4</a>
-            <a href="/task5.html" class="nav__link__vert">Task 5</a>
-        </div>
-
-        <!----------Hamburger Menu--------->
-        <div class="hamburger_menu">
-            <button class="hamburger-button" onclick="hamburgerMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="hamburger_navbar">
-                <a href="/index.html" class="hamburger_navbar-vert">Task 1</a>
-                <a href="/task2.html" class="hamburger_navbar-vert">Task 2</a>
-                <a href="/task3.html" class="hamburger_navbar-vert">Task 3</a>
-                <a href="/task4.html" class="hamburger_navbar-vert">Task 4</a>
-                <a href="/task5.html" class="hamburger_navbar-vert">Task 5</a>
-            </div>
-        </div>
-
-        <section class="section_uws_question">
-            <p class="paragraph_text">Type in your paragraph about uws</p>
-            <textarea name="textarea_uws_question" class="textarea_uws_question" cols="30" rows="10"
-                placeholder="Enter your Paragraph here for text needs to be processed:  "></textarea>
-            <button type="submit" value="submit" class="main_button" onclick="Paragraph_UWS()">Submit</button>
-            <div class="resultDiv"></div>
-        </section>
+    <!----------Hamburger Menu--------->
+    <div class="hamburger_menu">
+      <button class="hamburger-button" onclick="hamburgerMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="hamburger_navbar">
+        <a href="/index.html" class="hamburger_navbar-vert">Task 1</a>
+        <a href="/task2.html" class="hamburger_navbar-vert">Task 2</a>
+        <a href="/task3.html" class="hamburger_navbar-vert">Task 3</a>
+        <a href="/task4.html" class="hamburger_navbar-vert">Task 4</a>
+        <a href="/task5.html" class="hamburger_navbar-vert">Task 5</a>
+      </div>
     </div>
 
-    <!----------Footer--------->
-    <footer class="footer__paragraph__text">
-        <div class="footer__paragraph__text__container">
-            <div class="footer__paragraph__text__intro">
-                <p class="footer__paragraph__text">
-                    This is my project for Dr Saajad in my BSc Web and Mobile Year 3.
-                </p>
-            </div>
 
-            <ul class="footer__paragraph__text__social">
-                <li>
-                    <a href="https://www.facebook.com" rel="noreferrer" target="_blank"
-                        class="footer__paragraph__text__social__links">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                </li>
 
-                <li>
-                    <a href="https://www.instagram.com/" rel="noreferrer" target="_blank"
-                        class="footer__paragraph__text__social__links">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </li>
 
-                <li>
-                    <a href="https://x.com/" rel="noreferrer" target="_blank"
-                        class="footer__paragraph__text__social__links">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                </li>
 
-                <li>
-                    <a href="https://github.com/asimmian12/" rel="noreferrer" target="_blank"
-                        class="footer__paragraph__text__social__links">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
 
-        <section class="footer__paragraph__text__copyright">
-            &copy; Asim Mian 6/10/25
-        </section>
-    </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/script.js"></script>
+    <section class="section_uws_question">
+      <p class="paragraph_text">Type in your paragraph about uws</p>
+      <textarea name="textarea_uws_question" class="textarea_uws_question" cols="30" rows="10"
+        placeholder="Enter your Paragraph here for text needs to be processed:  "></textarea>
+      <button type="submit" value="submit" class="main_button" onclick="Paragraph_UWS()">Submit</button>
+      <div class="resultDiv"></div>
+    </section>
+  </div>
+
+  <!----------Footer--------->
+  <footer class="footer__paragraph__text">
+    <div class="footer__paragraph__text__container">
+      <div class="footer__paragraph__text__intro">
+        <p class="footer__paragraph__text">
+          This is my project for Dr Saajad in my BSc Web and Mobile Year 3.
+        </p>
+      </div>
+
+      <ul class="footer__paragraph__text__social">
+        <li>
+          <a href="https://www.facebook.com" rel="noreferrer" target="_blank"
+            class="footer__paragraph__text__social__links">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/" rel="noreferrer" target="_blank"
+            class="footer__paragraph__text__social__links">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://x.com/" rel="noreferrer" target="_blank" class="footer__paragraph__text__social__links">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/asimmian12/" rel="noreferrer" target="_blank"
+            class="footer__paragraph__text__social__links">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="footer__paragraph__text__copyright">
+      &copy; Asim Mian 6/10/25
+    </section>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
