@@ -67,8 +67,8 @@ function Paragraph_UWS() {
   let result = document.querySelector(".resultDiv");
   let letter = textarea.value;
   for (let i = 0; i < letter.length; i++) {
-    if (letter.includes(" ")) {
-      let test = (letter.lastIndexOf("uws") - letter.includes(" "));
+    if (letter.replaceAll(" ")) {
+      let test = Number(letter.length - letter.lastIndexOf("uws"));
       result.innerHTML = `Found Last Occurrence of UWS at line: ${test}`;
       console.log(`Found Last Occurrence of UWS at line: ${test}`);
     }
