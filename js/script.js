@@ -14,8 +14,7 @@ function hamburgerMenu() {
   return hamburgerMenu;
 }
 
-// TODO: Almost fixed Asim, fix it even more further more!!!!
-// Hamburger Menu
+// TODO: fix it even more further more!!!!
 // function hamburgerMenu() {
 //   let hamburger_menu = document.querySelector(".hamburger_menu");
 //   let hamburger_navbar = document.querySelector(".hamburger_navbar");
