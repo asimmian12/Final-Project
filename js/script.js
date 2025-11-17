@@ -1,6 +1,6 @@
 // Asim Mian
 // BSc Web and Mobile Development (Year 3)
-// 15/10/2025 
+// 15/10/2025
 
 // TODO: Almost fixed Asim, fix it even more further more!!!!
 // Hamburger Menu
@@ -14,6 +14,23 @@ function hamburgerMenu() {
   return hamburgerMenu;
 }
 
+// TODO: Almost fixed Asim, fix it even more further more!!!!
+// Hamburger Menu
+// function hamburgerMenu() {
+//   let hamburger_menu = document.querySelector(".hamburger_menu");
+//   let hamburger_navbar = document.querySelector(".hamburger_navbar");
+//   if (hamburger_menu.classList.toggle("active")) {
+//     if (hamburger_navbar.classList.toggle("active")) {
+//       hamburger_navbar.classList.add("active");
+//       hamburger_menu.classList.add("active");
+//     }
+//   } else {
+//     hamburger_menu.classList.remove("active");
+//     hamburger_navbar.classList.remove("active");
+//   }
+//   return hamburgerMenu;
+// }
+
 // TODO: Minor Bugs for Class, but it works, nonetheless
 class Person {
   constructor(name, birthday, income) {
@@ -26,13 +43,19 @@ class Person {
 let persons = [];
 let result = document.getElementById("paragraph_text");
 function comparePeople() {
-
-  let rest = new Person(document.getElementById("name").value, parseInt(document.getElementById("birthday").value), parseInt(document.getElementById("income").value));
+  let rest = new Person(
+    document.getElementById("name").value,
+    parseInt(document.getElementById("birthday").value),
+    parseInt(document.getElementById("income").value)
+  );
   persons.push(rest);
 
   for (let i = 0; i < persons.length; i++) {
     console.log(persons);
-    result.innerHTML += `<ul class="section__results"> <li id="paragraph_text"> Name: ${persons[i].name}` + ` Birthday: ${persons[i].birthday}` + ` Income: ${persons[i].income}</li> </ul>`;
+    result.innerHTML +=
+      `<ul class="section__results"> <li id="paragraph_text"> Name: ${persons[i].name}` +
+      ` Birthday: ${persons[i].birthday}` +
+      ` Income: ${persons[i].income}</li> </ul>`;
   }
 }
 
@@ -43,10 +66,42 @@ function sortByBirthday() {
 
   let highest = persons[0];
   let lowest = persons[persons.length - 1];
-  result.innerHTML += `<ul class="section__results"` + ` <li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
-    + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
-  result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
-    + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
+  result.innerHTML +=
+    `<ul class="section__results"` +
+    ` <li id="paragraph_text">` +
+    " Highest: " +
+    " Name: " +
+    highest.name +
+    " Birthday: " +
+    highest.birthday +
+    " Income: " +
+    highest.income +
+    " Lowest  " +
+    " Name: " +
+    lowest.name +
+    " Birthday: " +
+    lowest.birthday +
+    " Income: " +
+    lowest.income +
+    `</li>`;
+  result.innerHTML +=
+    `<ul class="section__results"` +
+    `<li id="paragraph_text">` +
+    " Highest: " +
+    " Name: " +
+    highest.name +
+    " Birthday: " +
+    highest.birthday +
+    " Income: " +
+    highest.income +
+    " Lowest  " +
+    " Name: " +
+    lowest.name +
+    " Birthday: " +
+    lowest.birthday +
+    " Income: " +
+    lowest.income +
+    `</li>`;
 }
 
 function sortByIncome() {
@@ -56,9 +111,24 @@ function sortByIncome() {
 
   let highest = persons[0];
   let lowest = persons[persons.length - 1];
-  result.innerHTML += `<ul class="section__results"` + `<li id="paragraph_text">` + " Highest: " + " Name: " + highest.name + " Birthday: " + highest.birthday + " Income: " + highest.income
-    + " Lowest  " + " Name: " + lowest.name + " Birthday: " + lowest.birthday + " Income: " + lowest.income + `</li>`;
-
+  result.innerHTML +=
+    `<ul class="section__results"` +
+    `<li id="paragraph_text">` +
+    " Highest: " +
+    " Name: " +
+    highest.name +
+    " Birthday: " +
+    highest.birthday +
+    " Income: " +
+    highest.income +
+    " Lowest  " +
+    " Name: " +
+    lowest.name +
+    " Birthday: " +
+    lowest.birthday +
+    " Income: " +
+    lowest.income +
+    `</li>`;
 }
 
 // TODO: Modified to use with a for loop to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
@@ -83,7 +153,7 @@ function addToCart() {
   let price_text = document.querySelector(".price_text");
   let quanity_text = document.querySelector(".quanity_text");
   let quanity = Number(1);
-  let price = (Math.round(Number(12.99)));
+  let price = Math.round(Number(12.99));
   let count = 0;
 
   add.onclick = function () {
@@ -92,7 +162,7 @@ function addToCart() {
     price = price + 12.99;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
-  }
+  };
 
   clear.onclick = function () {
     count = count = 0;
@@ -100,7 +170,7 @@ function addToCart() {
     price = price = 0;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
-  }
+  };
 
   remove.onclick = function () {
     count = count - 1;
@@ -108,7 +178,7 @@ function addToCart() {
     price = price - 12.99;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
-  }
+  };
 }
 
 // Add to Cart Btn For Card 2
@@ -119,7 +189,7 @@ function Cart() {
   let price_text = document.querySelector(".price-text");
   let quanity_text = document.querySelector(".quanity-text");
   let quanity = Number(1);
-  let price = (Math.round(Number(12.99)));
+  let price = Math.round(Number(12.99));
   let count = 0;
 
   add.onclick = function () {
@@ -128,7 +198,7 @@ function Cart() {
     price = price + 12.99;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
-  }
+  };
 
   clear.onclick = function () {
     count = count = 0;
@@ -136,7 +206,7 @@ function Cart() {
     price = price = 0;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
-  }
+  };
 
   remove.onclick = function () {
     count = count - 1;
@@ -144,7 +214,7 @@ function Cart() {
     price = price - 12.99;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
-  }
+  };
 }
 
 // Add to Cart Btn For Card 3
@@ -155,7 +225,7 @@ function Carts() {
   let price_text = document.querySelector(".price__text");
   let quanity_text = document.querySelector(".quanity__text");
   let quanity = Number(1);
-  let price = (Math.round(Number(12.99)));
+  let price = Math.round(Number(12.99));
   let count = 0;
 
   add.onclick = function () {
@@ -164,7 +234,7 @@ function Carts() {
     price = price + 12.99;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
-  }
+  };
 
   clear.onclick = function () {
     count = count = 0;
@@ -172,7 +242,7 @@ function Carts() {
     price = price = 0;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
-  }
+  };
 
   remove.onclick = function () {
     count = count - 1;
@@ -180,7 +250,7 @@ function Carts() {
     price = price - 12.99;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
-  }
+  };
 }
 
 let scrollRevealOption = {
@@ -191,7 +261,6 @@ let scrollRevealOption = {
 
 // Animations with Swiper Library
 window.onload = function () {
-
   ScrollReveal().reveal(".div_navbar_horizontal", {
     ...scrollRevealOption,
   });
@@ -202,88 +271,87 @@ window.onload = function () {
 
   ScrollReveal().reveal(".div_navbar_vertical", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".hamburger_menu", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".section_about_us", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".section_card", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".section_skills", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".section__journey", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".section_uws_question", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".main_button", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".textarea_uws_question", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".paragraph_text", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".section__forms", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".buttons", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".div__paragraph__results", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".section_orders", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".name", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".name__Input", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".date", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".date__input", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".income", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".income__input", {
     ...scrollRevealOption,
-  })
-
+  });
 
   ScrollReveal().reveal(".section_product_section_card", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".paragraph_heading", {
     ...scrollRevealOption,
@@ -291,13 +359,13 @@ window.onload = function () {
 
   ScrollReveal().reveal(".footer__paragraph__text", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".footer__paragraph__text__social__links", {
     ...scrollRevealOption,
-  })
+  });
 
   ScrollReveal().reveal(".footer__paragraph__text__copyright", {
     ...scrollRevealOption,
-  })
+  });
 };

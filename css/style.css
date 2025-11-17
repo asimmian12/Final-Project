@@ -703,6 +703,13 @@ h3.paragraph_heading {
   z-index: 1000;
 }
 
+/* .hamburger_navbar:active{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+} */
+
 .hamburger-button {
   background-color: #dcdee3;
   border: 2px solid #333;
