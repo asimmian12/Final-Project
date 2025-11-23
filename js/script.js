@@ -367,5 +367,4 @@ window.onload = function () {
   ScrollReveal().reveal(".footer__paragraph__text__copyright", {
     ...scrollRevealOption,
   });
-
 };
