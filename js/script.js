@@ -146,17 +146,17 @@ function Paragraph_UWS() {
 
 // Add to Cart Btn For Card 1
 function addToCart() {
-  var add = document.querySelector(".add_button");
-  var clear = document.querySelector(".clear_button");
-  var remove = document.querySelector(".subtract_button");
-  var price_text = document.querySelector(".price_text");
-  var quanity_text = document.querySelector(".quanity_text");
-  var quanity = Number(1);
-  var price = Math.round(Number(12.99));
-  var count = 0;
+  let add = document.querySelector(".add-button");
+  let clear = document.querySelector(".clear-button");
+  let remove = document.querySelector(".subtract-button");
+  let price_text = document.querySelector(".price-text");
+  let quanity_text = document.querySelector(".quanity-text");
+  let quanity = Number(1);
+  let price = Math.round(Number(12.99));
+  let count = 0;
 
-  var total_price = document.querySelector(".final-price");
-  var final_price;
+  let total_price = document.querySelector(".final-price");
+  let final_price;
 
   add.onclick = function () {
     count = count + 1;
@@ -194,17 +194,17 @@ function addToCart() {
 
 // Add to Cart Btn For Card 2
 function Cart() {
-  var add = document.querySelector(".add-button");
-  var clear = document.querySelector(".clear-button");
-  var remove = document.querySelector(".subtract-button");
-  var price_text = document.querySelector(".price-text");
-  var quanity_text = document.querySelector(".quanity-text");
-  var quanity = Number(1);
-  var price = Math.round(Number(14.00));
-  var count = 0;
+  let add = document.querySelector(".add_button");
+  let clear = document.querySelector(".clear_button");
+  let remove = document.querySelector(".subtract_button");
+  let price_text = document.querySelector(".price_text");
+  let quanity_text = document.querySelector(".quanity_text");
+  let quanity = Number(1);
+  let price = Math.round(Number(14.00));
+  let count = 0;
 
-  var total_price = document.querySelector(".final_price");
-  var final_price;
+  let total_price = document.querySelector(".final_price");
+  let final_price;
 
   add.onclick = function () {
     count = count + 1;
@@ -242,17 +242,17 @@ function Cart() {
 
 // Add to Cart Btn For Card 3
 function Carts() {
-  var add = document.querySelector(".add__button");
-  var clear = document.querySelector(".clear__button");
-  var remove = document.querySelector(".subtract__button");
-  var price_text = document.querySelector(".price__text");
-  var quanity_text = document.querySelector(".quanity__text");
-  var quanity = Number(1);
-  var price = Math.round(Number(35.31));
-  var count = 0;
+  let add = document.querySelector(".add__button");
+  let clear = document.querySelector(".clear__button");
+  let remove = document.querySelector(".subtract__button");
+  let price_text = document.querySelector(".price__text");
+  let quanity_text = document.querySelector(".quanity__text");
+  let quanity = Number(1);
+  let price = Math.round(Number(35.31));
+  let count = 0;
 
-  var total_price = document.querySelector(".final__price");
-  var final_price;
+  let total_price = document.querySelector(".final__price");
+  let final_price;
 
   add.onclick = function () {
     count = count + 1;
