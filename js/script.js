@@ -146,14 +146,17 @@ function Paragraph_UWS() {
 
 // Add to Cart Btn For Card 1
 function addToCart() {
-  let add = document.querySelector(".add_button");
-  let clear = document.querySelector(".clear_button");
-  let remove = document.querySelector(".subtract_button");
-  let price_text = document.querySelector(".price_text");
-  let quanity_text = document.querySelector(".quanity_text");
-  let quanity = Number(1);
-  let price = Math.round(Number(12.99));
-  let count = 0;
+  var add = document.querySelector(".add_button");
+  var clear = document.querySelector(".clear_button");
+  var remove = document.querySelector(".subtract_button");
+  var price_text = document.querySelector(".price_text");
+  var quanity_text = document.querySelector(".quanity_text");
+  var quanity = Number(1);
+  var price = Math.round(Number(12.99));
+  var count = 0;
+
+  var total_price = document.querySelector(".final-price");
+  var final_price;
 
   add.onclick = function () {
     count = count + 1;
@@ -161,6 +164,9 @@ function addToCart() {
     price = price + 12.99;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
+
+    final_price = Math.round(price * quanity);
+    total_price.innerHTML = `Final Price: ${final_price}`;
   };
 
   clear.onclick = function () {
@@ -169,6 +175,9 @@ function addToCart() {
     price = price = 0;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
+    
+    final_price = Math.round(price * quanity);
+    total_price.innerHTML = `Final Price: ${final_price}`;
   };
 
   remove.onclick = function () {
@@ -177,26 +186,35 @@ function addToCart() {
     price = price - 12.99;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
+
+    final_price = Math.round(price * quanity);
+    total_price.innerHTML = `Final Price: ${final_price}`;
   };
 }
 
 // Add to Cart Btn For Card 2
 function Cart() {
-  let add = document.querySelector(".add-button");
-  let clear = document.querySelector(".clear-button");
-  let remove = document.querySelector(".subtract-button");
-  let price_text = document.querySelector(".price-text");
-  let quanity_text = document.querySelector(".quanity-text");
-  let quanity = Number(1);
-  let price = Math.round(Number(12.99));
-  let count = 0;
+  var add = document.querySelector(".add-button");
+  var clear = document.querySelector(".clear-button");
+  var remove = document.querySelector(".subtract-button");
+  var price_text = document.querySelector(".price-text");
+  var quanity_text = document.querySelector(".quanity-text");
+  var quanity = Number(1);
+  var price = Math.round(Number(14.00));
+  var count = 0;
+
+  var total_price = document.querySelector(".final_price");
+  var final_price;
 
   add.onclick = function () {
     count = count + 1;
     quanity = quanity + 1;
-    price = price + 12.99;
+    price = price + 14.00;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
+
+    final_price = Math.round(price * quanity);
+    total_price.innerHTML = `Final Price: ${final_price}`;
   };
 
   clear.onclick = function () {
@@ -205,34 +223,46 @@ function Cart() {
     price = price = 0;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
+
+    final_price = Math.round(price * quanity);
+    total_price.innerHTML = `Final Price: ${final_price}`;
   };
 
   remove.onclick = function () {
     count = count - 1;
     quanity = quanity - 1;
-    price = price - 12.99;
+    price = price - 14.00;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
+
+    final_price = Math.round(price * quanity);
+    total_price.innerHTML = `Final Price: ${final_price}`;
   };
 }
 
 // Add to Cart Btn For Card 3
 function Carts() {
-  let add = document.querySelector(".add__button");
-  let clear = document.querySelector(".clear__button");
-  let remove = document.querySelector(".subtract__button");
-  let price_text = document.querySelector(".price__text");
-  let quanity_text = document.querySelector(".quanity__text");
-  let quanity = Number(1);
-  let price = Math.round(Number(12.99));
-  let count = 0;
+  var add = document.querySelector(".add__button");
+  var clear = document.querySelector(".clear__button");
+  var remove = document.querySelector(".subtract__button");
+  var price_text = document.querySelector(".price__text");
+  var quanity_text = document.querySelector(".quanity__text");
+  var quanity = Number(1);
+  var price = Math.round(Number(35.31));
+  var count = 0;
+
+  var total_price = document.querySelector(".final__price");
+  var final_price;
 
   add.onclick = function () {
     count = count + 1;
     quanity = quanity + 1;
-    price = price + 12.99;
+    price = price + 35.31;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
+
+    final_price = Math.round(price * quanity);
+    total_price.innerHTML = `Final Price: ${final_price}`;
   };
 
   clear.onclick = function () {
@@ -241,14 +271,20 @@ function Carts() {
     price = price = 0;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
+
+    final_price = Math.round(price * quanity);
+    total_price.innerHTML = `Final Price: ${final_price}`;
   };
 
   remove.onclick = function () {
     count = count - 1;
     quanity = quanity - 1;
-    price = price - 12.99;
+    price = price - 35.31;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
+
+    final_price = Math.round(price * quanity);
+    total_price.innerHTML = `Final Price: ${final_price}`;
   };
 }
 
