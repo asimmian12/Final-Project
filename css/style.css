@@ -371,11 +371,11 @@ p,
   color: white;
   padding: 20px;
   border-radius: 10px;
-  animation: rainbrow infinite 1s;
+  animation: colorSwitcher infinite 1s;
 }
 
 /* Making a background color switcher for testing purposes */
-@keyframes rainbrow {
+@keyframes colorSwitcher {
   0%{
    background-color: #0536e7;
   }
