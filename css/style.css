@@ -862,37 +862,6 @@ h3.paragraph_heading {
 
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .hamburger_menu {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    visibility: visible;
-  }
-
-  .div_navbar_horizontal {
-    display: none;
-
-  }
-
-  .div_navbar_vertical {
-    display: none;
-
-  }
-
-  .div_navbar_vertical .active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px #053af9;
-    visibility: visible;
-    opacity: 1%
-  }
-
-}
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .hamburger_menu {
     display: flex;
