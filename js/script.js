@@ -2,6 +2,18 @@
 // BSc Web and Mobile Development (Year 3)
 // 15/10/2025
 
+/* Tried to make this dynamic, but got less time, need to work on it at second attempt, if i may have one!!!
+so try to fix this later on, Asim, please, */
+
+// function Modern_Date(){
+//   let md = new Date();
+//   let footer__copyright = document.querySelector(".footer__paragraph__text__copyright");
+//   footer__copyright.innerHTML = `© Asim Mian  ${md}`;
+//   console.log(md);
+// }
+
+// Modern_Date();
+
 // Hamburger Menu
 function hamburgerMenu() {
   let hamburger_menu = document.querySelector(".hamburger_menu");
@@ -163,7 +175,7 @@ function addToCart() {
     price = price = 0;
     price_text.innerHTML = `Price is: £${price}`;
     quanity_text.innerHTML = `Quanity is: ${quanity}`;
-    
+
     final_price = Math.round(price * quanity);
     total_price.innerHTML = `Final Price: ${final_price}`;
   };
