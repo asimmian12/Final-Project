@@ -3,7 +3,7 @@
 /* 15/10/25 */
 
 /* Edge Bulit-in scrollbar to be set to hidden */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
   overflow: hidden;
 }
@@ -38,26 +38,26 @@ p,
   list-style-type: none;
 }
 
-.div__paragraph__results{
+.div__paragraph__results {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   flex-direction: column;
   list-style-type: none;
-  margin-top: 30rem;  
+  margin-top: 30rem;
 }
 
-.div__paragraph__results > .section__results {
+.div__paragraph__results>.section__results {
   list-style-type: none;
 }
 
-#resizable{
+#resizable {
   width: 200px;
   height: 200px;
 }
 
-#sortable{
+#sortable {
   list-style-type: none;
 }
 
@@ -376,11 +376,11 @@ p,
 
 /* Making a background color switcher for testing purposes */
 @keyframes colorSwitcher {
-  0%{
-   background-color: #0536e7;
+  0% {
+    background-color: #0536e7;
   }
 
-  10%{
+  10% {
     background-color: #FFA500;
   }
 }
@@ -715,12 +715,23 @@ h3.paragraph_heading {
   z-index: 1000;
 }
 
-/* .hamburger_navbar:active{
+.hamburger_navbar {
+  display: none; 
   position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
-} */
+  top: 100%; 
+  right: 0;
+  width: 200px;
+  gap: 4px;
+  background-color: #ef4444;
+  border-radius: 6px;
+  z-index: 999;
+  padding: 10px;
+}
+
+.hamburger_navbar.active {
+  display: flex; 
+  flex-direction: column;
+}
 
 .hamburger-button {
   background-color: #dcdee3;
