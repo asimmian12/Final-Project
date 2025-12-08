@@ -4,8 +4,18 @@
 
 // Hamburger Menu
 function hamburgerMenu() {
-  let hamburger_navbar = document.querySelector(".hamburger_navbar"); 
-  hamburger_navbar.classList.toggle("active"); 
+  let hamburger_menu = document.querySelector(".hamburger_menu");
+  let hamburger_navbar = document.querySelector(".hamburger_navbar");
+  if (hamburger_menu.classList.toggle("active")) {
+    if (hamburger_navbar.classList.toggle("active")) {
+      hamburger_navbar.classList.add("active");
+      hamburger_menu.classList.add("active");
+    }
+  } else {
+    hamburger_menu.classList.remove("active");
+    hamburger_navbar.classList.remove("active");
+  }
+  return hamburgerMenu;
 }
 
 // TODO: Minor Bugs for Class, but it works, nonetheless

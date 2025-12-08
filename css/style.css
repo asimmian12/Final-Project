@@ -716,21 +716,23 @@ h3.paragraph_heading {
 }
 
 .hamburger_navbar {
-  display: none; 
+  display: none;
+  visibility: hidden;
   position: fixed;
-  top: 100%; 
+  top: 100%;
   right: 0;
-  width: 200px;
-  gap: 4px;
-  background-color: #ef4444;
-  border-radius: 6px;
-  z-index: 999;
-  padding: 10px;
+  z-index: 1000;
+  background-color: #FFA500;
+  opacity: 65%;
 }
 
 .hamburger_navbar.active {
-  display: flex; 
+  display: flex;
+  visibility: visible;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .hamburger-button {
@@ -744,19 +746,6 @@ h3.paragraph_heading {
   color: #111;
   transition: all 0.3s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-.hamburger-button:hover,
-.hamburger-button:focus {
-  background-color: #E5E7EB;
-  border: 2px solid #E5E7EB;
-  color: #fff;
-  transform: scale(1.05);
-  outline: none;
-}
-
-.hamburger-button i {
-  pointer-events: none;
 }
 
 .hamburger_navbar-vert {
