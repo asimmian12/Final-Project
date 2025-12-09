@@ -819,6 +819,14 @@ h3.paragraph_heading {
     opacity: 1%
   }
 
+  .div__paragraph__results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -55%;
+  }
+
 }
 
 @media screen and (min-width: 344px) and (max-width: 882px) {
