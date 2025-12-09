@@ -39,10 +39,7 @@ function comparePeople() {
 
   for (let i = 0; i < persons.length; i++) {
     console.log(persons);
-    result.innerHTML +=
-      `<ul class="section__results"> <li id="paragraph_text"> Name: ${persons[i].name}` +
-      ` Birthday: ${persons[i].birthday}` +
-      ` Income: ${persons[i].income}</li> </ul>`;
+    result.innerHTML += `<ul class="section__results"> <li id="paragraph_text"> Name: ${persons[i].name}` + ` Birthday: ${persons[i].birthday}` + ` Income: ${persons[i].income}</li> </ul>`;
   }
 }
 

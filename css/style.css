@@ -10,6 +10,34 @@
   padding: 0;
 }
 
+/* 
+Spent a day, 
+trying to make this 
+:root for myself 
+saved me time to 
+look at what colours 
+i used previously, so i wanted to make it code modular, 
+and resuable (seperation of concerns)
+*/
+
+:root {
+  --nav-background-color: #E5E7EB;
+  --paragraph-text: #1f2937;
+  --paragraph_subtext: #4b5563;
+  --white: #ffffff;
+  --nav-hover: #374151;
+  --main-button: #2563eb;
+  --main-second-btn: #0536e7;
+  --main-button-hover: #1d4ed8;
+  --orange: #FFA500;
+  --subtract-btn: #ef4444;
+  --subtract-btn-hover: #f14343;
+  --clear-btn: #6b7280;
+  --clear-btn-hover: #7b8391;
+  --footer-color: #6B7280;
+  --hamburger-menu-btn-background-color: #dcdee3;
+}
+
 /* Edge Bulit-in scrollbar to be set to hidden */
 ::-webkit-scrollbar {
   display: none;
@@ -19,13 +47,13 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: #E5E7EB;
+  background-color: var(--nav-background-color);
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #1f2937;
+  color: var(--paragraph-text);
   line-height: 1.6;
 }
 
@@ -35,7 +63,7 @@ p,
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #333;
+  color: var(--paragraph-text);
   line-height: 1.6;
   padding: 5px;
   margin: 0;
@@ -88,8 +116,8 @@ p,
   display: flex;
   gap: 1rem;
   padding: 0.5rem 1rem;
-  background-color: #1f2937;
-  color: #ffffff;
+  background-color: var(--paragraph-text);
+  color: var(--white);
   justify-content: center;
   align-items: center;
 }
@@ -97,7 +125,7 @@ p,
 
 .div_navbar_horizontal a,
 .div_navbar_horizontal .nav-link {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
@@ -110,7 +138,7 @@ p,
 .div_navbar_horizontal a.active,
 .div_navbar_vertical.active,
 .nav__link__vert.active {
-  background-color: #374151;
+  background-color: var(--nav-hover);
 }
 
 /* ---------- div_layout ---------- */
@@ -125,8 +153,8 @@ p,
   flex-direction: column;
   gap: 0.5rem;
   padding: 1rem;
-  background-color: #1f2937;
-  color: #ffffff;
+  background-color: var(--paragraph-text);
+  color: var(--white);
   width: 15rem;
   min-height: 100vh;
 }
@@ -137,7 +165,7 @@ p,
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem;
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
   border-radius: 6px;
   transition: background-color 0.2s ease;
@@ -145,7 +173,7 @@ p,
 
 .div_navbar_vertical a:hover,
 .nav__link__vert:hover {
-  background-color: #374151;
+  background-color: var(--nav-hover);
 }
 
 .section__form {
@@ -169,8 +197,8 @@ p,
 .main_button {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background-color: #2563eb;
-  color: #ffffff;
+  background-color: var(--main-button);
+  color: var(--white);
   font-weight: 500;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -179,7 +207,7 @@ p,
 }
 
 .main_button:hover {
-  background-color: #1d4ed8;
+  background-color: var(--main-button-hover);
 }
 
 .buttons {
@@ -194,8 +222,8 @@ p,
 .add_button {
   display: block;
   padding: 0.75rem 2rem;
-  background-color: #2563eb;
-  color: #ffffff;
+  background-color: var(--main-button);
+  color: var(--white);
   font-weight: 500;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -203,14 +231,14 @@ p,
 }
 
 .add_button:hover {
-  background-color: #1d4ed8;
+  background-color: var(--main-button-hover);
 }
 
 .subtract_button {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background-color: #ef4444;
-  color: #ffffff;
+  background-color: var(--subtract-btn);
+  color: var(--white);
   font-weight: 500;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -218,14 +246,14 @@ p,
 }
 
 .subtract_button:hover {
-  background-color: #f14343;
+  background-color: var(--subtract-btn-hover);
 }
 
 .clear_button {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background-color: #6b7280;
-  color: #ffffff;
+  background-color: var(--clear-btn);
+  color: var(--white);
   font-weight: 500;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -233,14 +261,14 @@ p,
 }
 
 .clear_button:hover {
-  background-color: #7b8391;
+  background-color: var(--clear-btn-hover);
 }
 
 .add-button {
   display: block;
   padding: 0.75rem 2rem;
-  background-color: #2563eb;
-  color: #ffffff;
+  background-color: var(--main-button);
+  color: var(--white);
   font-weight: 500;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -248,14 +276,14 @@ p,
 }
 
 .add-button:hover {
-  background-color: #1d4ed8;
+  background-color: var(--main-button-hover);
 }
 
 .subtract-button {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background-color: #ef4444;
-  color: #ffffff;
+  background-color: var(--subtract-btn);
+  color: var(--white);
   font-weight: 500;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -263,14 +291,14 @@ p,
 }
 
 .subtract-button:hover {
-  background-color: #f14343;
+  background-color: var(--subtract-btn-hover);
 }
 
 .clear-button {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background-color: #6b7280;
-  color: #ffffff;
+  background-color: var(--clear-btn);
+  color: var(--white);
   font-weight: 500;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -278,14 +306,14 @@ p,
 }
 
 .clear-button:hover {
-  background-color: #7b8391;
+  background-color: var(--clear-btn-hover);
 }
 
 .add__button {
   display: block;
   padding: 0.75rem 2rem;
-  background-color: #2563eb;
-  color: #ffffff;
+  background-color: var(--main-button);
+  color: var(--white);
   font-weight: 500;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -293,14 +321,14 @@ p,
 }
 
 .add__button:hover {
-  background-color: #1d4ed8;
+  background-color: var(--main-button-hover);
 }
 
 .subtract__button {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background-color: #ef4444;
-  color: #ffffff;
+  background-color: var(--subtract-btn);
+  color: var(--white);
   font-weight: 500;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -308,14 +336,14 @@ p,
 }
 
 .subtract__button:hover {
-  background-color: #f14343;
+  background-color: var(--subtract-btn-hover);
 }
 
 .clear__button {
   display: inline-block;
   padding: 0.75rem 2rem;
-  background-color: #6b7280;
-  color: #ffffff;
+  background-color: var(--clear-btn);
+  color: var(--white);
   font-weight: 500;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -323,7 +351,7 @@ p,
 }
 
 .clear__button:hover {
-  background-color: #7b8391;
+  background-color: var(--clear-btn-hover);
 }
 
 .section_orders {
@@ -372,7 +400,7 @@ p,
   align-items: center;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  color: white;
+  color: var(--white);
   padding: 20px;
   border-radius: 10px;
   animation: colorSwitcher infinite 1s;
@@ -381,20 +409,20 @@ p,
 /* Making a background color switcher for testing purposes */
 @keyframes colorSwitcher {
   0% {
-    background-color: #0536e7;
+    background-color: var(--main-second-btn);
   }
 
   10% {
-    background-color: #FFA500;
+    background-color: var(--orange);
   }
 }
 
 .div_section_card_front {
-  background-color: #0536e7;
+  background-color: var(--main-second-btn);
 }
 
 .section_card-back {
-  background-color: #053af9;
+  background-color: var(--main-second-btn);
   transform: rotateY(180deg);
 }
 
@@ -403,7 +431,7 @@ p,
   height: 190px;
   border-radius: 50%;
   margin-bottom: 15px;
-  border: 3px solid white;
+  border: 3px solid var(--white);
 }
 
 .div_section_card_front h2,
@@ -420,8 +448,8 @@ p,
 .section_product_section_card {
   max-width: 320px;
   padding: 1rem;
-  background: #fff;
-  border: 1px solid #e5e7eb;
+  background: var(--white);
+  border: 1px solid var(--nav-background-color);
   border-radius: 8px;
 }
 
@@ -467,7 +495,7 @@ p,
 }
 
 .about-section {
-  background-color: #E5E7EB;
+  background-color: var(--nav-background-color);
   padding: 4rem 1.5rem;
 }
 
@@ -488,7 +516,7 @@ p,
   justify-content: center;
   font-size: 2rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--paragraph-text);
   margin-bottom: 1rem;
 }
 
@@ -503,7 +531,7 @@ p,
   object-fit: cover;
   border-radius: 9999px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  border: 4px solid #2563eb;
+  border: 4px solid var(--main-button);
   transition: transform 0.3s ease;
 }
 
@@ -514,7 +542,7 @@ p,
 
 /* ---------- Skills Section ---------- */
 .section_skills {
-  background-color: #E5E7EB;
+  background-color: var(--nav-background-color);
 }
 
 .div_inner {
@@ -527,14 +555,14 @@ p,
 .paragraph_heading {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--paragraph-text);
   margin-left: -2px;
   margin-bottom: 0.75rem;
   margin: 0.25rem 0;
 }
 
 .paragraph_subtext {
-  color: #4b5563;
+  color: var(--paragraph_subtext);
   margin-bottom: 1.5rem;
 }
 
@@ -551,7 +579,7 @@ p,
   width: 100%;
   max-width: 12rem;
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 0.5rem;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
   cursor: pointer;
@@ -571,7 +599,7 @@ p,
 .skill-label {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #374151;
+  color: var(--paragraph-text);
   text-align: center;
   margin: 0;
 }
@@ -579,7 +607,7 @@ p,
 /* ---------- div_timeline/Journey ---------- */
 .section__journey {
   padding: 4rem 1.5rem;
-  background-color: #E5E7EB;
+  background-color: var(--nav-background-color);
 }
 
 .div_inner.narrow {
@@ -600,7 +628,7 @@ h3.paragraph_heading {
   position: relative;
   margin-top: 1.5rem;
   padding-left: 1rem;
-  border-left: 4px solid #2563eb;
+  border-left: 4px solid var(--main-button);
 }
 
 .div_timeline_item {
@@ -616,14 +644,14 @@ h3.paragraph_heading {
   top: 0.25rem;
   width: 0.9rem;
   height: 0.9rem;
-  background-color: #E5E7EB;
-  border: 4px solid #2563eb;
+  background-color: var(--nav-background-color);
+  border: 4px solid var(--main-button);
   border-radius: 9999px;
 }
 
 .div_timeline_year {
   font-weight: 700;
-  color: #1f2937;
+  color: var(--paragraph-text);
   margin-bottom: 0.25rem;
   font-size: 0.95rem;
 }
@@ -631,15 +659,15 @@ h3.paragraph_heading {
 /* ---------- Outside Coding ---------- */
 .outside-section {
   padding: 4rem 1.5rem;
-  background-color: #E5E7EB;
+  background-color: var(--nav-background-color);
 }
 
 /* ---------- Footer ---------- */
 .footer__paragraph__text {
-  background: #ffffff;
+  background: var(--white);
   width: 100%;
-  border-top: 1px solid #E5E7EB;
-  color: #374151;
+  border-top: 1px solid var(--nav-background-color);
+  color: var(--nav-hover);
   box-sizing: border-box;
   font-family: inherit;
 }
@@ -661,7 +689,7 @@ h3.paragraph_heading {
 .footer__paragraph__text {
   text-align: center;
   line-height: 1.625;
-  color: #4B5563;
+  color: var(--paragraph_subtext);
   margin: 0;
 }
 
@@ -679,13 +707,13 @@ h3.paragraph_heading {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #4B5563;
+  color: var(--paragraph_subtext);
   text-decoration: none;
   transition: color 180ms ease;
 }
 
 .footer__paragraph__text__social__links:hover {
-  color: #2563EB;
+  color: var(--main-button);
 }
 
 
@@ -693,7 +721,7 @@ h3.paragraph_heading {
 .footer__paragraph__text__copyright {
   text-align: center;
   padding: 0.75rem 1rem;
-  color: #6B7280;
+  color: var(--footer-color);
   font-size: 0.875rem;
 }
 
@@ -714,7 +742,7 @@ h3.paragraph_heading {
   top: 100%;
   right: 0;
   z-index: 1000;
-  background-color: #FFA500;
+  background-color: var(--orange);
   opacity: 65%;
   margin-right: 32%;
 }
@@ -729,14 +757,14 @@ h3.paragraph_heading {
 }
 
 .hamburger-button {
-  background-color: #dcdee3;
-  border: 2px solid #333;
+  background-color: var(--hamburger-menu-btn-background-color);
+  border: 2px solid var(--paragraph-text);
   margin-left: -50%;
   border-radius: 8px;
   cursor: pointer;
   padding: 0.6rem 0.75rem;
   font-size: 1.8rem;
-  color: #111;
+  color: var(--paragraph-text);
   transition: all 0.3s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
@@ -746,9 +774,9 @@ h3.paragraph_heading {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem;
-  background-color: #E5E7EB;
-  border: 2px solid #E5E7EB;
-  color: #111;
+  background-color: var(--nav-background-color);
+  border: 2px solid var(--nav-background-color);
+  color: var(--paragraph-text);
   text-decoration: none;
   border-radius: 6px;
 }
@@ -786,7 +814,7 @@ h3.paragraph_heading {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px #053af9;
+    border: 2px var(--main-second-btn);
     visibility: visible;
     opacity: 1%
   }
@@ -817,7 +845,7 @@ h3.paragraph_heading {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px #053af9;
+    border: 2px var(--main-second-btn);
     visibility: visible;
     opacity: 1%
   }
@@ -848,7 +876,7 @@ h3.paragraph_heading {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px #053af9;
+    border: 2px var(--main-second-btn);
     visibility: visible;
     opacity: 1%
   }
@@ -879,7 +907,7 @@ h3.paragraph_heading {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px #053af9;
+    border: 2px var(--main-second-btn);
     visibility: visible;
     opacity: 1%
   }
@@ -909,7 +937,7 @@ h3.paragraph_heading {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px #053af9;
+    border: 2px var(--main-second-btn);
     visibility: visible;
     opacity: 1%
   }
@@ -939,7 +967,7 @@ h3.paragraph_heading {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px #053af9;
+    border: 2px var(--main-second-btn);
     visibility: visible;
     opacity: 1%
   }
