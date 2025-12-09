@@ -2,18 +2,6 @@
 // BSc Web and Mobile Development (Year 3)
 // 15/10/2025
 
-/* Tried to make this dynamic, but got less time, need to work on it at second attempt, if i may have one!!!
-// so try to fix this later on, Asim, please, */
-
-// function Modern_Date(){
-//   let md = new Date();
-//   let footer__copyright = document.querySelector(".footer__paragraph__text__copyright").innerHTML = "© Asim Mian" + md;
-//   console.log(md);
-//   console.log(footer__copyright);
-// }
-
-// Modern_Date();
-
 // Hamburger Menu
 function hamburgerMenu() {
   let hamburger_menu = document.querySelector(".hamburger_menu");
