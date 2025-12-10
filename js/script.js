@@ -147,14 +147,14 @@ function Paragraph_UWS() {
   let letter = textarea.value;
   let uws = letter.toLowerCase().lastIndexOf("uws");  
   if (uws === -1) {
-    result.textContent = 'Not found';
-  } 
+    result.innerHTML = `Found No Last Occurance, Sorry, Try Again!`;
+  }  
   else {
     let spacesBefore = 0;
     for (let i = 0; i < uws; i++) {   
       if (letter[i] === " ") spacesBefore++;
     }  
-    result.textContent = `Found Last Occurance at: ${spacesBefore}`;
+    result.innerHTML = `Found Last Occurance at Line: ${spacesBefore}`;
   }
 }
 
