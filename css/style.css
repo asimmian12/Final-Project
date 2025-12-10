@@ -199,7 +199,7 @@ p {
 }
 
 .hamburger_navbar-vert.active {
-  background-color: var(--nav-hover);
+  background-color: var(--hamburger-menu-btn-hover);
   /* opacity: 65%; */
 }
 
@@ -872,11 +872,6 @@ h3.paragraph_heading {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-}
-
-.hamburger_navbar-vert.active {
-  background-color: var(--hamburger-menu-btn-hover);
-  /* opacity: 65%; */
 }
 
 .hamburger-button {
