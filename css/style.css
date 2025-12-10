@@ -99,7 +99,7 @@ p {
   list-style-type: none;
 }
 
-.div__paragraph__results {
+.section__paragraph__results {
   display: flex;
   align-items: center;
   text-align: center;
@@ -109,7 +109,7 @@ p {
   margin-top: 30rem;
 }
 
-.div__paragraph__results>.section__results {
+.section__paragraph__results>.section__results {
   list-style-type: none;
 }
 
@@ -141,7 +141,7 @@ p {
 }
 
 /* ---------- Horizontal Navigation ---------- */
-.div_navbar_horizontal {
+.section_navbar_horizontal {
   display: flex;
   gap: 1rem;
   padding: 0.5rem 1rem;
@@ -152,7 +152,7 @@ p {
 }
 
 
-.div_navbar_horizontal a {
+.section_navbar_horizontal a {
   color: var(--white);
   text-decoration: none;
   padding: 0.5rem 0.75rem;
@@ -160,7 +160,7 @@ p {
   transition: background-color 0.2s;
 }
 
-.div_navbar_horizontal .nav-link {
+.section_navbar_horizontal .nav-link {
   color: var(--white);
   text-decoration: none;
   padding: 0.5rem 0.75rem;
@@ -168,27 +168,27 @@ p {
   transition: background-color 0.2s;
 }
 
-.div_navbar_horizontal a:hover {
+.section_navbar_horizontal a:hover {
   background-color: var(--nav-hover);
   /* opacity: 65%; */
 }
 
-.div_navbar_horizontal .nav-link:hover {
+.section_navbar_horizontal .nav-link:hover {
   background-color: var(--nav-hover);
   /* opacity: 65%; */
 }
 
-.div_navbar_horizontal .nav-link.active {
+.section_navbar_horizontal .nav-link.active {
   background-color: var(--nav-hover);
   /* opacity: 65%; */
 }
 
-.div_navbar_horizontal a.active {
+.section_navbar_horizontal a.active {
   background-color: var(--nav-hover);
   /* opacity: 65%; */
 }
 
-.div_navbar_vertical.active {
+.section_navbar_vertical.active {
   background-color: var(--nav-hover);
   /* opacity: 65%; */
 }
@@ -203,14 +203,14 @@ p {
   /* opacity: 65%; */
 }
 
-/* ---------- div_layout ---------- */
-.div_layout {
+/* ---------- section_layout ---------- */
+.section_layout {
   display: flex;
   flex: 1;
   min-height: 100vh;
 }
 
-.div_navbar_vertical {
+.section_navbar_vertical {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -221,7 +221,7 @@ p {
   min-height: 100vh;
 }
 
-.div_navbar_vertical a {
+.section_navbar_vertical a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -243,7 +243,7 @@ p {
   transition: background-color 0.2s ease;
 }
 
-.div_navbar_vertical a:hover {
+.section_navbar_vertical a:hover {
   background-color: var(--nav-hover);
 }
 
@@ -450,7 +450,7 @@ p {
 
 }
 
-.div_section_card-inner {
+.section_section_card-inner {
   position: relative;
   width: 400px;
   height: 400px;
@@ -459,15 +459,15 @@ p {
   cursor: pointer;
 }
 
-.section_card:hover .div_section_card-inner {
+.section_card:hover .section_section_card-inner {
   transform: rotateY(180deg);
 }
 
-.section_card:focus-within .div_section_card-inner {
+.section_card:focus-within .section_section_card-inner {
   transform: rotateY(180deg);
 }
 
-.div_section_card_front {
+.section_section_card_front {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -516,7 +516,7 @@ p {
   }
 }
 
-.div_section_card_front {
+.section_section_card_front {
   background-color: var(--main-second-btn);
 }
 
@@ -525,7 +525,7 @@ p {
   transform: rotateY(180deg);
 }
 
-.div_section_card_front img {
+.section_section_card_front img {
   width: 190px;
   height: 190px;
   border-radius: 50%;
@@ -533,7 +533,7 @@ p {
   border: 3px solid var(--white);
 }
 
-.div_section_card_front h2 {
+.section_section_card_front h2 {
   margin-bottom: 10px;
 }
 
@@ -541,7 +541,7 @@ p {
   margin-bottom: 10px;
 }
 
-.div_section_card_front p {
+.section_section_card_front p {
   font-size: 16px;
   text-align: center;
 }
@@ -580,7 +580,7 @@ p {
   gap: 12%;
 }
 
-.div_about_container {
+.section_about_container {
   max-width: 56rem;
   margin: 0 auto;
   padding: 0 1rem;
@@ -651,7 +651,7 @@ p {
   background-color: var(--nav-background-color);
 }
 
-.div_inner {
+.section_inner {
   max-width: 72rem;
   margin: 0 auto;
   padding: 0 1rem;
@@ -673,7 +673,7 @@ p {
 }
 
 /* ---------- Skills Grid ---------- */
-.div_skills_grid {
+.section_skills_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
@@ -681,7 +681,7 @@ p {
   align-items: start;
 }
 
-.div_skills_card {
+.section_skills_card {
   width: 100%;
   max-width: 12rem;
   padding: 1rem;
@@ -691,7 +691,7 @@ p {
   cursor: pointer;
 }
 
-.div_skills_card:hover {
+.section_skills_card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
 }
@@ -716,7 +716,7 @@ p {
   background-color: var(--nav-background-color);
 }
 
-.div_inner.narrow {
+.section_inner.narrow {
   max-width: 48rem;
   margin: 0 auto;
   padding: 0 1rem;
@@ -736,20 +736,20 @@ h3.paragraph_heading {
   justify-content: center;
 }
 
-.div_timeline {
+.section_timeline {
   position: relative;
   margin-top: 1.5rem;
   padding-left: 1rem;
   border-left: 4px solid var(--main-button);
 }
 
-.div_timeline_item {
+.section_timeline_item {
   position: relative;
   margin-bottom: 1.75rem;
   padding-left: 1.25rem;
 }
 
-.div_timeline_item::before {
+.section_timeline_item::before {
   content: "";
   position: absolute;
   left: -1.1rem;
@@ -761,11 +761,18 @@ h3.paragraph_heading {
   border-radius: 9999px;
 }
 
-.div_timeline_year {
+.section_timeline_year {
   font-weight: 700;
   color: var(--paragraph-text);
   margin-bottom: 0.25rem;
   font-size: 0.95rem;
+}
+
+.div_timeline_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* ---------- Outside Coding ---------- */
@@ -855,6 +862,7 @@ h3.paragraph_heading {
   right: 0;
   z-index: 1000;
   margin-right: 32%;
+  border: 2px solid var(--clear-btn);
 }
 
 .hamburger_navbar.active {
@@ -914,15 +922,15 @@ h3.paragraph_heading {
     visibility: visible;
   }
 
-  .div_navbar_horizontal {
+  .section_navbar_horizontal {
     display: none;
   }
 
-  .div_navbar_vertical {
+  .section_navbar_vertical {
     display: none;
   }
 
-  .div_navbar_vertical .active {
+  .section_navbar_vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -932,7 +940,7 @@ h3.paragraph_heading {
     opacity: 1%
   }
 
-  .div__paragraph__results {
+  .section__paragraph__results {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -951,15 +959,15 @@ h3.paragraph_heading {
     visibility: visible;
   }
 
-  .div_navbar_horizontal {
+  .section_navbar_horizontal {
     display: none;
   }
 
-  .div_navbar_vertical {
+  .section_navbar_vertical {
     display: none;
   }
 
-  .div_navbar_vertical .active {
+  .section_navbar_vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -980,15 +988,15 @@ h3.paragraph_heading {
     visibility: visible;
   }
 
-  .div_navbar_horizontal {
+  .section_navbar_horizontal {
     display: none;
   }
 
-  .div_navbar_vertical {
+  .section_navbar_vertical {
     display: none;
   }
 
-  .div_navbar_vertical .active {
+  .section_navbar_vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1009,15 +1017,15 @@ h3.paragraph_heading {
     visibility: visible;
   }
 
-  .div_navbar_horizontal {
+  .section_navbar_horizontal {
     display: none;
   }
 
-  .div_navbar_vertical {
+  .section_navbar_vertical {
     display: none;
   }
 
-  .div_navbar_vertical .active {
+  .section_navbar_vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1037,15 +1045,15 @@ h3.paragraph_heading {
     visibility: visible;
   }
 
-  .div_navbar_horizontal {
+  .section_navbar_horizontal {
     display: none;
   }
 
-  .div_navbar_vertical {
+  .section_navbar_vertical {
     display: none;
   }
 
-  .div_navbar_vertical .active {
+  .section_navbar_vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1065,15 +1073,15 @@ h3.paragraph_heading {
     visibility: visible;
   }
 
-  .div_navbar_horizontal {
+  .section_navbar_horizontal {
     display: none;
   }
 
-  .div_navbar_vertical {
+  .section_navbar_vertical {
     display: none;
   }
 
-  .div_navbar_vertical .active {
+  .section_navbar_vertical .active {
     display: flex;
     flex-direction: column;
     justify-content: center;

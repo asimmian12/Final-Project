@@ -126,17 +126,35 @@ function sortByIncome() {
     `</li>`;
 }
 
+// Old Version of Count UWS, so close,
 // TODO: Modified to use with a for loop to search through the string for checking conditions; if it has 'uws' anywhere in paragraph
+// function Paragraph_UWS() {
+//   let textarea = document.querySelector(".textarea_uws_question");
+//   let result = document.querySelector(".section__result");
+//   let letter = textarea.value;
+//   for (let i = 0; i < letter.length; i++) {
+//     if (letter.replaceAll(" ")) {
+//       let test = Number(letter.length - letter.lastIndexOf("uws"));
+//       result.innerHTML = `Found Last Occurrence of UWS at line: ${test}`;
+//       console.log(`Found Last Occurrence of UWS at line: ${test}`);
+//     }
+//   }
+// }
+
 function Paragraph_UWS() {
   let textarea = document.querySelector(".textarea_uws_question");
-  let result = document.querySelector(".resultDiv");
+  let result = document.querySelector(".section__result");
   let letter = textarea.value;
-  for (let i = 0; i < letter.length; i++) {
-    if (letter.replaceAll(" ")) {
-      let test = Number(letter.length - letter.lastIndexOf("uws"));
-      result.innerHTML = `Found Last Occurrence of UWS at line: ${test}`;
-      console.log(`Found Last Occurrence of UWS at line: ${test}`);
-    }
+  let uws = letter.toLowerCase().lastIndexOf("uws");  
+  if (uws === -1) {
+    result.textContent = 'Not found';
+  } 
+  else {
+    let spacesBefore = 0;
+    for (let i = 0; i < uws; i++) {   
+      if (letter[i] === " ") spacesBefore++;
+    }  
+    result.textContent = `Found Last Occurance at: ${spacesBefore}`;
   }
 }
 
@@ -292,15 +310,15 @@ let scrollRevealOption = {
 
 // Animations with Swiper Library
 window.onload = function () {
-  ScrollReveal().reveal(".div_navbar_horizontal", {
+  ScrollReveal().reveal(".section_navbar_horizontal", {
     ...scrollRevealOption,
   });
 
-  ScrollReveal().reveal(".div_layout", {
+  ScrollReveal().reveal(".section_layout", {
     ...scrollRevealOption,
   });
 
-  ScrollReveal().reveal(".div_navbar_vertical", {
+  ScrollReveal().reveal(".section_navbar_vertical", {
     ...scrollRevealOption,
   });
 
@@ -348,7 +366,7 @@ window.onload = function () {
     ...scrollRevealOption,
   });
 
-  ScrollReveal().reveal(".div__paragraph__results", {
+  ScrollReveal().reveal(".section__paragraph__results", {
     ...scrollRevealOption,
   });
 
