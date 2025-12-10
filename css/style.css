@@ -20,9 +20,10 @@ i used previously, so i wanted to make it code modular,
 and resuable (seperation of concerns)
 
 edit: And Refactored my own css, had , 
-with class secelctors ygother, with comma, 
+with class selector together, with comma, 
 seperated them, so it can be easier for me to edit, 
-and each seceltor can be easier to work with
+and each selector can be easier to work with 
+
 */
 
 /* Global Varables for code modularity, and reuseablity */
@@ -510,9 +511,9 @@ p {
     background-color: var(--orange);
   }
 
-  15%{
+  15% {
     background-color: var(--subtract-btn);
-  } 
+  }
 }
 
 .div_section_card_front {
