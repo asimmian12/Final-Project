@@ -18,7 +18,7 @@ function hamburgerMenu() {
   return hamburgerMenu;
 }
 
-// Hamburger Menu
+// Old Hamburger Menu
 // function hamburgerMenu() {
 //   let hamburger_menu = document.querySelector(".hamburger_menu");
 //   if (hamburger_menu.classList.toggle("active")) {
