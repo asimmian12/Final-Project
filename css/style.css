@@ -450,7 +450,7 @@ p {
 
 }
 
-.section_section_card-inner {
+.section_section_card_inner {
   position: relative;
   width: 400px;
   height: 400px;
@@ -459,11 +459,11 @@ p {
   cursor: pointer;
 }
 
-.section_card:hover .section_section_card-inner {
+.section_card:hover .section_section_card_inner {
   transform: rotateY(180deg);
 }
 
-.section_card:focus-within .section_section_card-inner {
+.section_card:focus-within .section_section_card_inner {
   transform: rotateY(180deg);
 }
 
