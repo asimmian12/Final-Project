@@ -11,15 +11,21 @@
 }
 
 /* 
-Spent a day, 
+edit: Spent a day, 
 trying to make this 
 :root for myself 
 saved me time to 
 look at what colours 
 i used previously, so i wanted to make it code modular, 
 and resuable (seperation of concerns)
+
+edit: And Refactored my own css, had , 
+with class secelctors ygother, with comma, 
+seperated them, so it can be easier for me to edit, 
+and each seceltor can be easier to work with
 */
 
+/* Global Varables for code modularity, and reuseablity */
 :root {
   --nav-background-color: #E5E7EB;
   --paragraph-text: #1f2937;
@@ -36,6 +42,8 @@ and resuable (seperation of concerns)
   --clear-btn-hover: #7b8391;
   --footer-color: #6B7280;
   --hamburger-menu-btn-background-color: #dcdee3;
+  --hamburger-menu-btn-hover: #b5b8bf;
+
 }
 
 /* Edge Bulit-in scrollbar to be set to hidden */
@@ -57,8 +65,28 @@ body {
   line-height: 1.6;
 }
 
-p,
-.paragraph_text,
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--paragraph-text);
+  line-height: 1.6;
+  padding: 5px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.paragraph_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--paragraph-text);
+  line-height: 1.6;
+  padding: 5px;
+  margin: 0;
+  list-style-type: none;
+}
+
 .paragraph-copyright {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -123,7 +151,14 @@ p,
 }
 
 
-.div_navbar_horizontal a,
+.div_navbar_horizontal a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
 .div_navbar_horizontal .nav-link {
   color: var(--white);
   text-decoration: none;
@@ -132,13 +167,39 @@ p,
   transition: background-color 0.2s;
 }
 
-.div_navbar_horizontal a:hover,
-.div_navbar_horizontal .nav-link:hover,
-.div_navbar_horizontal .nav-link.active,
-.div_navbar_horizontal a.active,
-.div_navbar_vertical.active,
+.div_navbar_horizontal a:hover {
+  background-color: var(--nav-hover);
+  /* opacity: 65%; */
+}
+
+.div_navbar_horizontal .nav-link:hover {
+  background-color: var(--nav-hover);
+  /* opacity: 65%; */
+}
+
+.div_navbar_horizontal .nav-link.active {
+  background-color: var(--nav-hover);
+  /* opacity: 65%; */
+}
+
+.div_navbar_horizontal a.active {
+  background-color: var(--nav-hover);
+  /* opacity: 65%; */
+}
+
+.div_navbar_vertical.active {
+  background-color: var(--nav-hover);
+  /* opacity: 65%; */
+}
+
 .nav__link__vert.active {
   background-color: var(--nav-hover);
+  /* opacity: 65%; */
+}
+
+.hamburger_navbar-vert.active {
+  background-color: var(--nav-hover);
+  /* opacity: 65%; */
 }
 
 /* ---------- div_layout ---------- */
@@ -159,7 +220,17 @@ p,
   min-height: 100vh;
 }
 
-.div_navbar_vertical a,
+.div_navbar_vertical a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
 .nav__link__vert {
   display: flex;
   align-items: center;
@@ -171,7 +242,10 @@ p,
   transition: background-color 0.2s ease;
 }
 
-.div_navbar_vertical a:hover,
+.div_navbar_vertical a:hover {
+  background-color: var(--nav-hover);
+}
+
 .nav__link__vert:hover {
   background-color: var(--nav-hover);
 }
@@ -372,6 +446,7 @@ p,
   width: 400px;
   height: 400px;
   perspective: 1000px;
+
 }
 
 .div_section_card-inner {
@@ -383,12 +458,31 @@ p,
   cursor: pointer;
 }
 
-.section_card:hover .div_section_card-inner,
+.section_card:hover .div_section_card-inner {
+  transform: rotateY(180deg);
+}
+
 .section_card:focus-within .div_section_card-inner {
   transform: rotateY(180deg);
 }
 
-.div_section_card_front,
+.div_section_card_front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: var(--white);
+  padding: 20px;
+  border-radius: 25%;
+  animation: colorSwitcher infinite 1s;
+}
+
 .section_card-back {
   position: absolute;
   width: 100%;
@@ -402,7 +496,7 @@ p,
   font-size: 18px;
   color: var(--white);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 25%;
   animation: colorSwitcher infinite 1s;
 }
 
@@ -415,6 +509,10 @@ p,
   10% {
     background-color: var(--orange);
   }
+
+  15%{
+    background-color: var(--subtract-btn);
+  } 
 }
 
 .div_section_card_front {
@@ -434,12 +532,19 @@ p,
   border: 3px solid var(--white);
 }
 
-.div_section_card_front h2,
+.div_section_card_front h2 {
+  margin-bottom: 10px;
+}
+
 .section_card-back h2 {
   margin-bottom: 10px;
 }
 
-.div_section_card_front p,
+.div_section_card_front p {
+  font-size: 16px;
+  text-align: center;
+}
+
 .section_card-back p {
   font-size: 16px;
   text-align: center;
@@ -616,7 +721,13 @@ p,
   padding: 0 1rem;
 }
 
-.section__journey,
+.section__journey {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 h3.paragraph_heading {
   display: flex;
   align-items: center;
@@ -742,8 +853,6 @@ h3.paragraph_heading {
   top: 100%;
   right: 0;
   z-index: 1000;
-  background-color: var(--orange);
-  opacity: 65%;
   margin-right: 32%;
 }
 
@@ -754,6 +863,11 @@ h3.paragraph_heading {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+.hamburger_navbar-vert.active {
+  background-color: var(--hamburger-menu-btn-hover);
+  /* opacity: 65%; */
 }
 
 .hamburger-button {
@@ -817,7 +931,7 @@ h3.paragraph_heading {
     opacity: 1%
   }
 
-  .div__paragraph__results{
+  .div__paragraph__results {
     display: flex;
     align-items: center;
     justify-content: center;

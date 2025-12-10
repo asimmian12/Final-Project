@@ -21,7 +21,8 @@
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 </head>
@@ -36,7 +37,7 @@
   </div>
 
   <!--------div_layout---------->
-  <div class="div_layout">
+  <section class="div_layout">
     <!------Vertical Navbar------->
     <div class="div_navbar_vertical">
       <a href="/index.html" class="nav__link__vert">Task 1</a>
@@ -55,7 +56,7 @@
         <a href="/index.html" class="hamburger_navbar-vert">Task 1</a>
         <a href="/task2.html" class="hamburger_navbar-vert">Task 2</a>
         <a href="/task3.html" class="hamburger_navbar-vert">Task 3</a>
-        <a href="/task4.html" class="hamburger_navbar-vert">Task 4</a>
+        <a href="/task4.html" class="hamburger_navbar-vert active">Task 4</a>
         <a href="/task5.html" class="hamburger_navbar-vert">Task 5</a>
       </div>
     </div>
@@ -86,8 +87,8 @@
           <button class="clear_button" type="button" onclick="Cart()">Clear</button>
           <button class="subtract_button" type="button" onclick="Cart()">Remove from Cart</button>
           <p class="price_text">Indivual Price: 14.00</p>
-          <p class="quanity_text">Quanity: 0</p> 
-	        <p class="final_price">Final Price: 0</p>
+          <p class="quanity_text">Quanity: 0</p>
+          <p class="final_price">Final Price: 0</p>
         </div>
       </section>
 
@@ -101,11 +102,11 @@
           <button class="subtract__button" type="button" onclick="Carts()">Remove from Cart</button>
           <p class="price__text">Indivual Price: 35.31</p>
           <p class="quanity__text">Quanity: 0</p>
-	        <p class="final__price">Final Price: 0</p>
+          <p class="final__price">Final Price: 0</p>
         </div>
       </section>
     </section>
-  </div>
+  </section>
 
   <!----------Footer--------->
   <footer class="footer__paragraph__text">
@@ -150,9 +151,9 @@
       &copy; Asim Mian 6/10/25
     </section>
   </footer>
-  
+
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="js/script.js"></script>
-  
+
 </body>
 </html>
