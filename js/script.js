@@ -18,6 +18,17 @@ function hamburgerMenu() {
   return hamburgerMenu;
 }
 
+// Hamburger Menu
+// function hamburgerMenu() {
+//   let hamburger_menu = document.querySelector(".hamburger_menu");
+//   if (hamburger_menu.classList.toggle("active")) {
+//     hamburger_menu.classList.add("active");
+//   } else {
+//     hamburger_menu.classList.remove("active");
+//   }
+//   return hamburgerMenu;
+// }
+
 // TODO: Minor Bugs for Class, but it works, nonetheless
 class Person {
   constructor(name, birthday, income) {
