@@ -482,6 +482,8 @@ p {
   padding: 20px;
   border-radius: 25%;
   animation: colorSwitcher infinite 1s;
+  transform: rotateX(30deg);
+  cursor: pointer;
 }
 
 .section_card-back {
@@ -499,6 +501,8 @@ p {
   padding: 20px;
   border-radius: 25%;
   animation: colorSwitcher infinite 1s;
+  transform: rotateX(-30deg);
+  cursor: pointer;
 }
 
 /* Making a background color switcher for testing purposes */
@@ -768,7 +772,7 @@ h3.paragraph_heading {
   font-size: 0.95rem;
 }
 
-.section_timeline_content{
+.section_timeline_content {
   display: flex;
   align-items: center;
   justify-content: center;
