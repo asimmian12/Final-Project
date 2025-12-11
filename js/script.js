@@ -62,6 +62,7 @@ function sortByBirthday() {
   let highest = persons[0];
   let lowest = persons[persons.length - 1];
   result.innerHTML +=
+  `<br><br>` +
     `Sorted Birthday: ` +
     `<ul class="section__results"` +
     ` <li id="paragraph_text">` +
@@ -90,6 +91,7 @@ function sortByIncome() {
   let highest = persons[0];
   let lowest = persons[persons.length - 1];
   result.innerHTML +=
+    `<br><br>` + 
     `Sorted Income: ` + 
     `<ul class="section__results"` +
     `<li id="paragraph_text">` +
