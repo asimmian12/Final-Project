@@ -710,7 +710,7 @@ p {
   margin: 0;
 }
 
-/* ---------- div_timeline/Journey ---------- */
+/* ---------- secyion_timeline/Journey ---------- */
 .section__journey {
   padding: 4rem 1.5rem;
   background-color: var(--nav-background-color);
@@ -768,7 +768,7 @@ h3.paragraph_heading {
   font-size: 0.95rem;
 }
 
-.div_timeline_content{
+.section_timeline_content{
   display: flex;
   align-items: center;
   justify-content: center;
