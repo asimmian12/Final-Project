@@ -79,24 +79,6 @@ function sortByBirthday() {
     " Income: " +
     lowest.income +
     `</li>`;
-  result.innerHTML +=
-    `<ul class="section__results"` +
-    `<li id="paragraph_text">` +
-    " Highest: " +
-    " Name: " +
-    highest.name +
-    " Birthday: " +
-    highest.birthday +
-    " Income: " +
-    highest.income +
-    " Lowest  " +
-    " Name: " +
-    lowest.name +
-    " Birthday: " +
-    lowest.birthday +
-    " Income: " +
-    lowest.income +
-    `</li>`;
 }
 
 function sortByIncome() {
